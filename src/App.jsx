@@ -1,32 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { rutasApp } from "./routes/routesApp.js";
 import Layouts from "./components/layouts/Layouts.jsx";
 import Error from "./components/pages/error/Error.jsx";
-import ItemListContainer from "./components/pages/ItemList/ItemListContainer.jsx";
-import HomeContainer from "./components/pages/home/HomeContainer.jsx";
-import ServiceListContainer from "./components/pages/ServiceList/ServiceListContainer.jsx";
+import { routesApp } from "./routes/routesApp.js";
 
 
 function App() {
   return (
     <>
-      <h1>UCHI</h1>
       <BrowserRouter>
-        {/* <CartContextProvider> */}
+        {/* <ContextProvider> */}
         <Routes>
           <Route element={<Layouts />}>
-            <Route path="/" element={<HomeContainer />}></Route>
-            <Route path="/productos" element={<ItemListContainer />}></Route>
-            <Route path="/servicios" element={<ServiceListContainer />}></Route>
-            {/* {rutasApp.map(({ id, path, Element }) => (
+            {routesApp.map(({ id, path, Element }) => (
                 <Route key={id} path={path} element={<Element />} />
-              ))} */}
+              ))}
           </Route>
 
           <Route path="*" element={<Error />} />
         </Routes>
 
-        {/* </CartContextProvider> */}
+        {/* </ContextProvider> */}
       </BrowserRouter>
     </>
   );
