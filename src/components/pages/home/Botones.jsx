@@ -6,20 +6,25 @@ import Typography from "@mui/material/Typography";
 
 const images = [
   {
+    id: "1",
     url: "https://d22fxaf9t8d39k.cloudfront.net/257be6d9ec51f8cf586e2f062cc3381c860d6a7e757edca56648c6e03de9457c58154.jpeg",
     title: "Productos",
     width: "40%",
-    href: "?",
+    path: "/productos",
   },
   {
+    id: "2",
     url: "https://d22fxaf9t8d39k.cloudfront.net/248a2104cca292e92162b8ca298a93cd53fdc27cae07712e1f576f6f5d2a7aeb58154.jpg",
     title: "Servicios",
     width: "40%",
+    path: "/servicios"
   },
   {
+    id:"3",
     url: "https://d22fxaf9t8d39k.cloudfront.net/82bee09b3b367d833bc928e4192a4d8b458470d443709a1f2948461e3bc44d7258154.jpg",
     title: "Sobre mí",
     width: "20%",
+    path: "/"
   },
 ];
 
@@ -92,16 +97,16 @@ export default function ButtonBaseDemo() {
     <Box
       sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "100%" }}
     >
-      {images.map((image) => (
+      {images.map(({id, title, path, url, width}) => (
         <ImageButton
           focusRipple
-          key={image.title}
+          key={id}
           style={{
-            width: image.width,
+            width: width,
           }}
-          LinkComponent={image.href}
+          href={path}
         >
-          <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+          <ImageSrc style={{ backgroundImage: `url(${url})` }} />
           <ImageBackdrop className="MuiImageBackdrop-root" />
           <Image>
             <Typography
@@ -115,7 +120,7 @@ export default function ButtonBaseDemo() {
                 pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
               }}
             >
-              {image.title}
+              {title}
               <ImageMarked className="MuiImageMarked-root" />
             </Typography>
           </Image>

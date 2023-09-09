@@ -12,14 +12,22 @@ import Button from "@mui/material/Button";
 // import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { Link } from "react-router-dom";
+// import { styled } from "@mui/material/styles";
+import "./Navbar.css"
 
-
-const pages = ["Productos", "Servicios", "Blog"];
+const pages = [
+  { id: "productos", name: "Productos", path: "/productos" },
+  { id: "servicios", name: "Servicios", path: "/servicios" },
+  { id:"blog", name: "Blog", path: "/" },
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -30,14 +38,28 @@ const Navbar = () => {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+    
+    
   };
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
 
+
+  //PARA NAVBAR ANCHO USAR ESTO
+//   const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+//     alignItems: "flex-start",
+//     paddingTop: theme.spacing(1),
+//     paddingBottom: theme.spacing(2),
+//     // Override media queries injected by theme.mixins.toolbar
+//     "@media all": {
+//       minHeight: 128,
+//     },
+//   }));
   return (
     <AppBar position="static" sx={{ backgroundColor: "#A2988D" }}>
+      {/* <StyledToolbar> */}
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -88,9 +110,18 @@ const Navbar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map(({ id, name, path }) => (
+                <MenuItem
+                  key={id}
+                  onClick={handleCloseNavMenu}
+
+                >
+                  <Link
+                    style={{ textDecoration: "none", color: "white" }}
+                    to={path}
+                  >
+                    <Typography textAlign="center">{name}</Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -115,13 +146,19 @@ const Navbar = () => {
             UCHI
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {pages.map(({ id, name, path }) => (
               <Button
-                key={page}
+                key={id}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <Link
+                  style={{ textDecoration: "inherit", color: "white" }}
+                  to={path}
+                >
+                  {" "}
+                  {name}
+                </Link>
               </Button>
             ))}
           </Box>
@@ -157,6 +194,7 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </Container>
+      {/* </StyledToolbar> */}
     </AppBar>
   );
 };
