@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layouts from "./components/layouts/Layouts.jsx";
 import Error from "./components/pages/error/Error.jsx";
 import { routesApp } from "./routes/routesApp.js";
+import "./App.css";
 
 
 function App() {

@@ -1,7 +1,108 @@
+import { styled } from "@mui/material/styles";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LockIcon from "@mui/icons-material/Lock";
+import { Divider } from "@mui/material";
+import "./Footer.css";
+import EmailIcon from "@mui/icons-material/Email";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import { Link } from "react-router-dom";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
+const Div = styled("div")(({ theme }) => ({
+  ...theme.typography.button,
+  backgroundColor: "#719c7e",
+  padding: theme.spacing(1),
+  display: "block",
+  textAlign: "center",
+}));
+
 const Footer = () => {
   return (
-    <div><h1>Footer</h1></div>
-  )
-}
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          backgroundColor: "#719c7e",
+        }}
+      >
+        <Div>
+          <LocationOnIcon fontSize="large" />
+          <br></br>
+          {"Envíos a todo el país"}
+          <br></br>
+          {"Comprá sin salir de tu casa"}
+        </Div>
+        <Divider orientation="vertical" flexItem />
+        <Div>
+          <LocationOnIcon fontSize="large" />
+          <br></br>
+          {"Retiros en CABA"}
+          <br></br>
+          {"BELGRANO / PALERMO / RETIRO"}
+        </Div>
+        <Divider orientation="vertical" flexItem />
+        <Div>
+          <LockIcon fontSize="large" />
+          <br></br>
+          {"Compra segura"}
+          <br></br>
+          {"Protegemos tus datos"}
+        </Div>
+      </div>
+      <Divider />
+      <div className="redes">
+        <Div>
+          <h3>Medios de envío</h3>
+          <img
+            src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/e-pick.png"
+            className="footer__top__icon"
+            alt="Medio Envio"
+          />
+          <img
+            src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/correo-argentino.png"
+            className="footer__top__icon"
+            alt="Medio Envio"
+          />
+          <img
+            src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/personalizado.png"
+            className="footer__top__icon"
+            alt="Medio Envio"
+          />
+          <img
+            src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/retiro-local.png"
+            className="footer__top__icon"
+            alt="Medio Envio"
+          />
+          <img
+            src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/acordar.png"
+            className="footer__top__icon"
+            alt="Medio Envio"
+          />
+        </Div>
+        <Div>
+          <h3>Nuestras redes sociales</h3>
+          <Link
+            style={{ color: "inherit" }}
+            to="https://www.youtube.com/channel/UCZyzYTcjeYO-M1M48_XiM2Q"
+            target="_blank"
+          >
+            <YouTubeIcon fontSize="large" />
+          </Link>
+          <Link
+            style={{ color: "inherit" }}
+            to="https://www.instagram.com/uchi__ar/"
+            target="_blank"
+          >
+            <InstagramIcon fontSize="large" />
+          </Link>
+          <h3>Contacto</h3>
+          <EmailIcon fontSize="small" /> hola@uchi.com.ar
+        </Div>
+      </div>
+    </>
+  );
+};
 
-export default Footer
+export default Footer;
