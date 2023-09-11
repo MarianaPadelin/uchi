@@ -10,7 +10,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Div = styled("div")(({ theme }) => ({
   ...theme.typography.button,
-  backgroundColor: "#719c7e",
+  backgroundColor: "#a2988e",
   padding: theme.spacing(1),
   display: "block",
   textAlign: "center",
@@ -19,14 +19,7 @@ const Div = styled("div")(({ theme }) => ({
 const Footer = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-          backgroundColor: "#719c7e",
-        }}
-      >
+      <div className="redes">
         <Div>
           <LocationOnIcon fontSize="large" />
           <br></br>
@@ -34,7 +27,7 @@ const Footer = () => {
           <br></br>
           {"Comprá sin salir de tu casa"}
         </Div>
-        <Divider orientation="vertical" flexItem />
+        <Divider className="divider" orientation="vertical" flexItem />
         <Div>
           <LocationOnIcon fontSize="large" />
           <br></br>
@@ -42,7 +35,7 @@ const Footer = () => {
           <br></br>
           {"BELGRANO / PALERMO / RETIRO"}
         </Div>
-        <Divider orientation="vertical" flexItem />
+        <Divider className="divider" orientation="vertical" flexItem />
         <Div>
           <LockIcon fontSize="large" />
           <br></br>
@@ -53,7 +46,7 @@ const Footer = () => {
       </div>
       <Divider />
       <div className="redes">
-        <Div>
+        <Div style={{alignSelf:"baseline"}}>
           <h3>Medios de envío</h3>
           <img
             src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/e-pick.png"
@@ -81,6 +74,7 @@ const Footer = () => {
             alt="Medio Envio"
           />
         </Div>
+        <Divider className="divider" orientation="vertical" flexItem />
         <Div>
           <h3>Nuestras redes sociales</h3>
           <Link

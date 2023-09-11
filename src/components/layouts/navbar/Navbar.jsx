@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-// import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 // import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
@@ -20,21 +19,20 @@ const pages = [
   { id: "productos", name: "Productos", path: "/productos" },
   { id: "servicios", name: "Servicios", path: "/servicios" },
   { id:"blog", name: "Blog", path: "/" },
-];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+]; 
+
+// const productos = [{id: "suribachi", name: "suribachi"},{id: "hangiri", name: "hangiri"},{id: "chawan", name:"chawan"}]
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
 
 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  //   const handleOpenUserMenu = (event) => {
-  //     setAnchorElUser(event.currentTarget);
-  //   };
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -42,10 +40,7 @@ const Navbar = () => {
     
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
+ 
 
   //PARA NAVBAR ANCHO USAR ESTO
 //   const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -156,7 +151,6 @@ const Navbar = () => {
                   style={{ textDecoration: "inherit", color: "white" }}
                   to={path}
                 >
-                  {" "}
                   {name}
                 </Link>
               </Button>
@@ -169,28 +163,7 @@ const Navbar = () => {
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip> */}
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+          
           </Box>
         </Toolbar>
       </Container>
