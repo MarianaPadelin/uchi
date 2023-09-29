@@ -1,12 +1,12 @@
 import { styled } from "@mui/material/styles";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import LockIcon from "@mui/icons-material/Lock";
 import { Divider } from "@mui/material";
 import "./Footer.css";
 import EmailIcon from "@mui/icons-material/Email";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Link } from "react-router-dom";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Div = styled("div")(({ theme }) => ({
   ...theme.typography.button,
@@ -37,16 +37,6 @@ const Footer = () => {
         </Div>
         <Divider className="divider" orientation="vertical" flexItem />
         <Div>
-          <LockIcon fontSize="large" />
-          <br></br>
-          {"Compra segura"}
-          <br></br>
-          {"Protegemos tus datos"}
-        </Div>
-      </div>
-      <Divider />
-      <div className="redes">
-        <Div style={{alignSelf:"baseline"}}>
           <h3>Medios de envío</h3>
           <img
             src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/e-pick.png"
@@ -74,6 +64,19 @@ const Footer = () => {
             alt="Medio Envio"
           />
         </Div>
+      </div>
+      <Divider />
+      <div className="redes">
+        <Div style={{ alignSelf: "baseline" }}>
+          <h3>Contacto </h3>
+          <Link
+            to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
+            target="_blank"
+          >
+            <WhatsAppIcon className="iconoWhatsapp" color="success" />
+          </Link>
+          <EmailIcon fontSize="small" /> hola@uchi.com.ar
+        </Div>
         <Divider className="divider" orientation="vertical" flexItem />
         <Div>
           <h3>Nuestras redes sociales</h3>
@@ -91,8 +94,6 @@ const Footer = () => {
           >
             <InstagramIcon fontSize="large" />
           </Link>
-          <h3>Contacto</h3>
-          <EmailIcon fontSize="small" /> hola@uchi.com.ar
         </Div>
       </div>
     </>

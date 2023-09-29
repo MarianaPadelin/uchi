@@ -10,15 +10,19 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 // import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+// import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 // import { styled } from "@mui/material/styles";
 import "./Navbar.css"
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const pages = [
   { id: "productos", name: "Productos", path: "/productos" },
   { id: "servicios", name: "Servicios", path: "/servicios" },
-  { id:"blog", name: "Blog", path: "/" },
+  { id: "about", name: "Sobre UCHI", path: "/about" },
+  { id: "info", name: "Información Útil", path: "/info" },
+  { id: "contacto", name: "Contacto", path: "/contacto" },
 ]; 
 
 // const productos = [{id: "suribachi", name: "suribachi"},{id: "hangiri", name: "hangiri"},{id: "chawan", name:"chawan"}]
@@ -57,8 +61,9 @@ const Navbar = () => {
       {/* <StyledToolbar> */}
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> ESTO ES EL ICONO */}
+
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -73,10 +78,20 @@ const Navbar = () => {
               textDecoration: "none",
             }}
           >
-            UCHI
-          </Typography>
+            
+          </Typography> */}
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              justifyContent: "space-between",
+            }}
+          >
+            <img
+              style={{ width: "30%", margin: "1vw" }}
+              src="src\components\common\Logos\1.2-Negro_Horizontal.png"
+            ></img>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -106,11 +121,7 @@ const Navbar = () => {
               }}
             >
               {pages.map(({ id, name, path }) => (
-                <MenuItem
-                  key={id}
-                  onClick={handleCloseNavMenu}
-
-                >
+                <MenuItem key={id} onClick={handleCloseNavMenu}>
                   <Link
                     style={{ textDecoration: "none", color: "white" }}
                     to={path}
@@ -119,9 +130,30 @@ const Navbar = () => {
                   </Link>
                 </MenuItem>
               ))}
+              <MenuItem>
+                <Link
+                  style={{ color: "white" }}
+                  to="https://www.youtube.com/channel/UCZyzYTcjeYO-M1M48_XiM2Q"
+                  target="_blank"
+                >
+                  <YouTubeIcon />
+                </Link>
+                <Link
+                  style={{ color: "white" }}
+                  to="https://www.instagram.com/uchi__ar/"
+                  target="_blank"
+                >
+                  <InstagramIcon />
+                </Link>
+                <Link
+                  to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
+                  target="_blank"
+                ></Link>
+              </MenuItem>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
+          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -139,8 +171,15 @@ const Navbar = () => {
             }}
           >
             UCHI
-          </Typography>
+          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Link to="/">
+              <img
+                style={{ width: "60%", margin: "1vw" }}
+                src="src\components\common\Logos\1.2-Negro_Horizontal.png"
+              ></img>
+            </Link>
+
             {pages.map(({ id, name, path }) => (
               <Button
                 key={id}
@@ -163,7 +202,6 @@ const Navbar = () => {
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip> */}
-          
           </Box>
         </Toolbar>
       </Container>

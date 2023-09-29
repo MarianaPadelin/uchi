@@ -17,5 +17,20 @@ export const routesApp = [
     id: "servicios",
     path: "/servicios",
     Element: ServiceListContainer,
-  }
+  },
+  {
+    id: "sobre uchi",
+    path: "/about",
+    Element: ServiceListContainer,
+  },
+  {
+    id: "información útil",
+    path: "/info",
+    Element: ServiceListContainer,
+  },
+  {
+    id: "contacto",
+    path: "/contacto",
+    Element: ServiceListContainer,
+  },
 ];

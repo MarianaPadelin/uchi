@@ -2,28 +2,30 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
+import "./Botones.css"
+import { Button } from "@mui/material";
 
 
 const images = [
   {
     id: "1",
     url: "https://d22fxaf9t8d39k.cloudfront.net/257be6d9ec51f8cf586e2f062cc3381c860d6a7e757edca56648c6e03de9457c58154.jpeg",
-    title: "Productos",
-    width: "40%",
+    title: "Producto 1",
+    width: "25%",
     path: "/productos",
   },
   {
     id: "2",
     url: "https://d22fxaf9t8d39k.cloudfront.net/248a2104cca292e92162b8ca298a93cd53fdc27cae07712e1f576f6f5d2a7aeb58154.jpg",
-    title: "Servicios",
-    width: "40%",
+    title: "Producto 2",
+    width: "25%",
     path: "/servicios",
   },
   {
     id: "3",
     url: "https://d22fxaf9t8d39k.cloudfront.net/82bee09b3b367d833bc928e4192a4d8b458470d443709a1f2948461e3bc44d7258154.jpg",
-    title: "Sobre mí",
-    width: "20%",
+    title: "Producto 3",
+    width: "25%",
     path: "/",
   },
 ];
@@ -94,38 +96,49 @@ const ImageMarked = styled("span")(({ theme }) => ({
 
 export default function ButtonBaseDemo() {
   return (
-    <Box
-      sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "100%" }}
-    >
-      {images.map(({id, title, path, url, width}) => (
-        <ImageButton
-          focusRipple
-          key={id}
-          style={{
-            width: width,
-          }}
-          href={path}
+    <div>
+      <Box className="botones">
+        {images.map(({ id, title, path, url, width }) => (
+          <ImageButton
+            focusRipple
+            key={id}
+            style={{
+              width: width,
+              marginLeft: "3vw",
+              marginRight: "3vw",
+            }}
+            href={path}
+          >
+            <ImageSrc style={{ backgroundImage: `url(${url})` }} />
+            <ImageBackdrop className="MuiImageBackdrop-root" />
+            <Image>
+              <Typography
+                component="span"
+                variant="subtitle1"
+                color="inherit"
+                sx={{
+                  position: "relative",
+                  p: 4,
+                  pt: 2,
+                  pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                }}
+              >
+                {title}
+                <br />
+                Ver más
+                <ImageMarked className="MuiImageMarked-root" />
+              </Typography>
+            </Image>
+          </ImageButton>
+        ))}
+        <Button
+          variant="contained"
+          size="large"
+          style={{ backgroundColor: "#719c7e", margin: "1vh", width: "40%" }}
         >
-          <ImageSrc style={{ backgroundImage: `url(${url})` }} />
-          <ImageBackdrop className="MuiImageBackdrop-root" />
-          <Image>
-            <Typography
-              component="span"
-              variant="subtitle1"
-              color="inherit"
-              sx={{
-                position: "relative",
-                p: 4,
-                pt: 2,
-                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-              }}
-            >
-              {title}
-              <ImageMarked className="MuiImageMarked-root" />
-            </Typography>
-          </Image>
-        </ImageButton>
-      ))}
-    </Box>
+          Ver más productos
+        </Button>
+      </Box>
+    </div>
   );
 }

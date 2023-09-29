@@ -1,0 +1,10 @@
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300;
+    width: 100%;
+    justify-content: center;
+            background-color:#fbfcef;
+
+}
+
