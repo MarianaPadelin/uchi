@@ -3,13 +3,12 @@ import Layouts from "./components/layouts/Layouts.jsx";
 import Error from "./components/pages/error/Error.jsx";
 import { routesApp } from "./routes/routesApp.js";
 import "./App.css";
-
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <ContextProvider> */}
         <Routes>
           <Route element={<Layouts />}>
             {routesApp.map(({ id, path, Element }) => (
@@ -19,8 +18,6 @@ function App() {
 
           <Route path="*" element={<Error />} />
         </Routes>
-
-        {/* </ContextProvider> */}
       </BrowserRouter>
     </>
   );

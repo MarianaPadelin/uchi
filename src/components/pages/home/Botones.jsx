@@ -97,7 +97,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
 export default function ButtonBaseDemo() {
   return (
     <div>
-      <Box className="botones">
+      <Box className="botones" id="botones">
         {images.map(({ id, title, path, url, width }) => (
           <ImageButton
             focusRipple
@@ -106,6 +106,8 @@ export default function ButtonBaseDemo() {
               width: width,
               marginLeft: "3vw",
               marginRight: "3vw",
+              display: "flex",
+              justifyContent: "center",
             }}
             href={path}
           >
@@ -135,6 +137,7 @@ export default function ButtonBaseDemo() {
           variant="contained"
           size="large"
           style={{ backgroundColor: "#719c7e", margin: "1vh", width: "40%" }}
+          href="/productos"
         >
           Ver más productos
         </Button>

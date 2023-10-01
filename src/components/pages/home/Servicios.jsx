@@ -10,6 +10,7 @@ export const Servicios = () => {
         variant="contained"
         size="large"
         style={{ backgroundColor: "#719c7e", margin: "1vh", width: "40%" }}
+        href="/servicios"
       >
         Ver servicios
       </Button>

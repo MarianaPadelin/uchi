@@ -13,9 +13,10 @@ import MenuItem from "@mui/material/MenuItem";
 // import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 // import { styled } from "@mui/material/styles";
-import "./Navbar.css"
+import "./Navbar.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+
 
 const pages = [
   { id: "productos", name: "Productos", path: "/productos" },
@@ -23,39 +24,31 @@ const pages = [
   { id: "about", name: "Sobre UCHI", path: "/about" },
   { id: "info", name: "Información Útil", path: "/info" },
   { id: "contacto", name: "Contacto", path: "/contacto" },
-]; 
+];
 
 // const productos = [{id: "suribachi", name: "suribachi"},{id: "hangiri", name: "hangiri"},{id: "chawan", name:"chawan"}]
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-
-
-
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
 
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-    
-    
   };
 
- 
-
   //PARA NAVBAR ANCHO USAR ESTO
-//   const StyledToolbar = styled(Toolbar)(({ theme }) => ({
-//     alignItems: "flex-start",
-//     paddingTop: theme.spacing(1),
-//     paddingBottom: theme.spacing(2),
-//     // Override media queries injected by theme.mixins.toolbar
-//     "@media all": {
-//       minHeight: 128,
-//     },
-//   }));
+  //   const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+  //     alignItems: "flex-start",
+  //     paddingTop: theme.spacing(1),
+  //     paddingBottom: theme.spacing(2),
+  //     // Override media queries injected by theme.mixins.toolbar
+  //     "@media all": {
+  //       minHeight: 128,
+  //     },
+  //   }));
   return (
     <AppBar position="static" sx={{ backgroundColor: "#A2988D" }}>
       {/* <StyledToolbar> */}
@@ -181,27 +174,21 @@ const Navbar = () => {
             </Link>
 
             {pages.map(({ id, name, path }) => (
-              <Button
-                key={id}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                <Link
-                  style={{ textDecoration: "inherit", color: "white" }}
-                  to={path}
-                >
-                  {name}
-                </Link>
-              </Button>
-            ))}
-          </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            {/* <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip> */}
+                <Button
+                  key={id}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  <Link
+                    style={{ textDecoration: "inherit", color: "white" }}
+                    to={path}
+                  >
+                    {name}
+                  </Link>
+                </Button>
+
+            ))}
           </Box>
         </Toolbar>
       </Container>

@@ -1,3 +1,8 @@
-ul {
-  background-color: #a2988d;
+.Navbar{
+  background-color: #A2988D;
+  color: #fbfcef
+}
+
+div.nav-item.show.dropdown {
+  background-color: #A2988D;
 }

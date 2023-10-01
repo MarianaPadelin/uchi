@@ -1,6 +1,10 @@
-import ItemListContainer from "../components/pages/ItemList/ItemListContainer";
-import ServiceListContainer from "../components/pages/ServiceList/ServiceListContainer";
+import { AboutContainer } from "../components/pages/about/AboutContainer";
+import { ContactoContainer } from "../components/pages/contacto/ContactoContainer";
+import { DetalleContainer } from "../components/pages/detalle/DetalleContainer";
 import HomeContainer from "../components/pages/home/HomeContainer";
+import { InfoContainer } from "../components/pages/info/InfoContainer";
+import { ProductosContainer } from "../components/pages/productos/ProductosContainer";
+import { ServiciosContainer } from "../components/pages/servicios/ServiciosContainer";
 
 export const routesApp = [
   {
@@ -11,26 +15,31 @@ export const routesApp = [
   {
     id: "productos",
     path: "/productos",
-    Element: ItemListContainer,
+    Element: ProductosContainer,
   },
   {
     id: "servicios",
     path: "/servicios",
-    Element: ServiceListContainer,
+    Element: ServiciosContainer,
   },
   {
     id: "sobre uchi",
     path: "/about",
-    Element: ServiceListContainer,
+    Element: AboutContainer,
   },
   {
     id: "información útil",
     path: "/info",
-    Element: ServiceListContainer,
+    Element: InfoContainer,
   },
   {
     id: "contacto",
     path: "/contacto",
-    Element: ServiceListContainer,
+    Element: ContactoContainer,
+  },
+  {
+    id: "detalle",
+    path: "/detalle/:id",
+    Element: DetalleContainer,
   },
 ];

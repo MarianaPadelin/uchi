@@ -37,7 +37,8 @@ const Footer = () => {
         </Div>
         <Divider className="divider" orientation="vertical" flexItem />
         <Div>
-          <h3>Medios de envío</h3>
+          {"Medios de envío"}
+        <br />
           <img
             src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/e-pick.png"
             className="footer__top__icon"
