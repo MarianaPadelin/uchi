@@ -1,18 +1,17 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./Productos.css"
+import { productos } from "../../../routes/productos";
 
-const Productos = () => {
-  const productos = [
-    { id: "suribachi", name: "suribachi" },
-    { id: "hangiri", name: "hangiri" },
-    { id: "chawan", name: "chawan" },
-  ];
 
+export const Productos = () => {
   return (
-    <div>
+    <div className="productos">
       <h1>Acá va la lista de productos</h1>
-      {productos.map(({ id, name }) => (
-        <Button key={id}>{name}</Button>
+      {productos.map(({ id, title, path }) => (
+        <Button key={id} href={path}>
+          {title}
+        </Button>
       ))}
 
       <Link to={"/"}>
@@ -20,6 +19,4 @@ const Productos = () => {
       </Link>
     </div>
   );
-};
-
-export default Productos;
+}

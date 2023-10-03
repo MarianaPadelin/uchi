@@ -3,6 +3,8 @@ import { Detalle } from "./Detalle"
 import { useParams } from "react-router-dom";
 import { productos } from "../../../routes/productos"; 
 import Loader from "../../common/Loader";
+
+
 export const DetalleContainer = () => {
 
    const [seleccionado, setSeleccionado] = useState({});

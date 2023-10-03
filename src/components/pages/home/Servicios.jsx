@@ -6,10 +6,9 @@ export const Servicios = () => {
     <div className="servicios">
       <h1>SERVICIOS</h1>
       <h3>Descripción de los servicios</h3>
-      <Button
+      <Button className="botonera"
         variant="contained"
         size="large"
-        style={{ backgroundColor: "#719c7e", margin: "1vh", width: "40%" }}
         href="/servicios"
       >
         Ver servicios

@@ -134,9 +134,9 @@ export default function ButtonBaseDemo() {
           </ImageButton>
         ))}
         <Button
+          className="botonera"
           variant="contained"
           size="large"
-          style={{ backgroundColor: "#719c7e", margin: "1vh", width: "40%" }}
           href="/productos"
         >
           Ver más productos

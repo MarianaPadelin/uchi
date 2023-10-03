@@ -7,3 +7,10 @@ a{
     font-family: none;
     /* acá poner la tipografia */
 }
+
+
+.botonera{
+    background-color: #719c7e!important;
+    margin: 1vh!important;
+    width:40%;
+}

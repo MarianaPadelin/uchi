@@ -24,6 +24,7 @@ function Navbarcompleto() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Productos" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/productos">Todos los productos</NavDropdown.Item>
               {productos.map(({ id, title, path }) => (
                 <NavDropdown.Item key={id} href={path}>
                   {title}
