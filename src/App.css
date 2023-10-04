@@ -4,8 +4,8 @@ a{
 }
 
 *{
-    font-family: none;
-    /* acá poner la tipografia */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 
@@ -13,4 +13,7 @@ a{
     background-color: #719c7e!important;
     margin: 1vh!important;
     width:40%;
+    border-radius: 2vw!important;
+    display: flex;
+    justify-content: center;
 }

@@ -6,8 +6,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #a2988e;
-  color:#fbfcef;
+  background-color: #f4f4f4;
+  color:#3a3a3a;
 
 }
 
@@ -16,10 +16,3 @@
   background-color:white;
 }
 
-.iconoWhatsapp {
-
-     position: fixed;
-    top: 85%;
-    left:10%;
-    font-size: 5rem!important;
-}

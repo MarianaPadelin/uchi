@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+// import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Divider } from "@mui/material";
 import "./Footer.css";
 import EmailIcon from "@mui/icons-material/Email";
@@ -7,10 +7,11 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Link } from "react-router-dom";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const Div = styled("div")(({ theme }) => ({
   ...theme.typography.button,
-  backgroundColor: "#a2988e",
+  backgroundColor: "#f4f4f4",
   padding: theme.spacing(1),
   display: "block",
   textAlign: "center",
@@ -19,7 +20,7 @@ const Div = styled("div")(({ theme }) => ({
 const Footer = () => {
   return (
     <>
-      <div className="redes">
+      {/* <div className="redes">
         <Div>
           <LocationOnIcon fontSize="large" />
           <br></br>
@@ -38,7 +39,7 @@ const Footer = () => {
         <Divider className="divider" orientation="vertical" flexItem />
         <Div>
           {"Medios de envío"}
-        <br />
+          <br />
           <img
             src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/e-pick.png"
             className="footer__top__icon"
@@ -65,35 +66,43 @@ const Footer = () => {
             alt="Medio Envio"
           />
         </Div>
-      </div>
+      </div> */}
       <Divider />
       <div className="redes">
         <Div style={{ alignSelf: "baseline" }}>
-          <h3>Contacto </h3>
+          <h6>Contacto </h6>
           <Link
+            style={{ color: "inherit" }}
             to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
             target="_blank"
           >
-            <WhatsAppIcon className="iconoWhatsapp" color="success" />
+            <WhatsAppIcon />
           </Link>
-          <EmailIcon fontSize="small" /> hola@uchi.com.ar
+          <EmailIcon fontSize="small" /> hola@uchi.com.ar Num celu
         </Div>
         <Divider className="divider" orientation="vertical" flexItem />
         <Div>
-          <h3>Nuestras redes sociales</h3>
+          <h6>Seguinos en</h6>
           <Link
             style={{ color: "inherit" }}
             to="https://www.youtube.com/channel/UCZyzYTcjeYO-M1M48_XiM2Q"
             target="_blank"
           >
-            <YouTubeIcon fontSize="large" />
+            <YouTubeIcon  />
           </Link>
           <Link
             style={{ color: "inherit" }}
             to="https://www.instagram.com/uchi__ar/"
             target="_blank"
           >
-            <InstagramIcon fontSize="large" />
+            <InstagramIcon />
+          </Link>
+          <Link
+            style={{ color: "inherit" }}
+            to="https://www.uchi.com.ar/"
+            target="_blank"
+          >
+            <ShoppingCartIcon />
           </Link>
         </Div>
       </div>

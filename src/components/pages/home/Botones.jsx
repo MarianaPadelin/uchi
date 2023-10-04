@@ -9,22 +9,22 @@ import { Button } from "@mui/material";
 const images = [
   {
     id: "1",
-    url: "https://d22fxaf9t8d39k.cloudfront.net/257be6d9ec51f8cf586e2f062cc3381c860d6a7e757edca56648c6e03de9457c58154.jpeg",
-    title: "Producto 1",
+    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696427462/uchi/Suribachi_detalle_omii2d.jpg",
+    title: "Suribachi",
     width: "25%",
     path: "/productos",
   },
   {
     id: "2",
-    url: "https://d22fxaf9t8d39k.cloudfront.net/248a2104cca292e92162b8ca298a93cd53fdc27cae07712e1f576f6f5d2a7aeb58154.jpg",
-    title: "Producto 2",
+    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696429529/uchi/Chawan_qyriqw.jpg",
+    title: "Chawan",
     width: "25%",
     path: "/servicios",
   },
   {
     id: "3",
-    url: "https://d22fxaf9t8d39k.cloudfront.net/82bee09b3b367d833bc928e4192a4d8b458470d443709a1f2948461e3bc44d7258154.jpg",
-    title: "Producto 3",
+    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696429584/uchi/Hangiri_uso_nuu3bv.jpg",
+    title: "Hangiri",
     width: "25%",
     path: "/",
   },
@@ -35,7 +35,8 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   height: 200,
   [theme.breakpoints.down("sm")]: {
     width: "100% !important", // Overrides inline-style
-    height: 100,
+    height: 200,
+    
   },
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
@@ -108,6 +109,7 @@ export default function ButtonBaseDemo() {
               marginRight: "3vw",
               display: "flex",
               justifyContent: "center",
+              //poner bordes redondeados
             }}
             href={path}
           >
@@ -138,8 +140,9 @@ export default function ButtonBaseDemo() {
           variant="contained"
           size="large"
           href="/productos"
+        
         >
-          Ver más productos
+          Ver todos
         </Button>
       </Box>
     </div>

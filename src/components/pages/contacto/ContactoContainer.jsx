@@ -1,7 +1,7 @@
-
+import "./Contacto.css"
 
 export const ContactoContainer = () => {
   return (
-    <div>ContactoContainer</div>
+    <div className="contacto">ContactoContainer</div>
   )
 }
