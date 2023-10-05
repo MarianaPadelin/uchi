@@ -33,10 +33,11 @@ const images = [
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
   height: 200,
+
   [theme.breakpoints.down("sm")]: {
     width: "100% !important", // Overrides inline-style
-    height: 200,
-    
+    height: 200,    
+
   },
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
@@ -60,6 +61,7 @@ const ImageSrc = styled("span")({
   bottom: 0,
   backgroundSize: "cover",
   backgroundPosition: "center 40%",
+  borderRadius: "3vw",
 });
 
 const Image = styled("span")(({ theme }) => ({
@@ -83,6 +85,7 @@ const ImageBackdrop = styled("span")(({ theme }) => ({
   backgroundColor: theme.palette.common.black,
   opacity: 0.4,
   transition: theme.transitions.create("opacity"),
+  borderRadius: "3vw",
 }));
 
 const ImageMarked = styled("span")(({ theme }) => ({
@@ -93,6 +96,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
   bottom: -2,
   left: "calc(50% - 9px)",
   transition: theme.transitions.create("opacity"),
+  borderRadius: "3vw",
 }));
 
 export default function ButtonBaseDemo() {
@@ -107,8 +111,10 @@ export default function ButtonBaseDemo() {
               width: width,
               marginLeft: "3vw",
               marginRight: "3vw",
+              marginBottom: "2vh",
               display: "flex",
               justifyContent: "center",
+              borderRadius:"3vw"
               //poner bordes redondeados
             }}
             href={path}

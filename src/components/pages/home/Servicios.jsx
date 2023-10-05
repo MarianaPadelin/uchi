@@ -3,7 +3,7 @@ import "./Servicios.css"
 
 export const Servicios = () => {
   return (
-    <div className="servicios">
+    <div className="servicios" id="servicios">
       <h1>SERVICIOS</h1>
       <h3>Descripción de los servicios</h3>
       <Button className="botonera"
@@ -11,7 +11,7 @@ export const Servicios = () => {
         size="large"
         href="/servicios"
       >
-        Ver servicios
+        Ver más
       </Button>
     </div>
   );
