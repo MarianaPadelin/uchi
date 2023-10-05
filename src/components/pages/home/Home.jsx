@@ -10,7 +10,7 @@ const imagenes = [
   },
   {
     id: "img2",
-    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696516385/uchi/inicio/Test-web_1024x722-opacidad_50_axhj9m.png",
+    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696516630/uchi/inicio/Test-web_1024x722-opacidad_50_yfp7uj.png",
   },
   {
     id: "img3",
