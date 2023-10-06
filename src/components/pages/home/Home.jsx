@@ -10,7 +10,7 @@ const imagenes = [
   },
   {
     id: "img2",
-    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696516630/uchi/inicio/Test-web_1024x722-opacidad_50_yfp7uj.png",
+    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696523963/uchi/inicio/Test-web_1440x747-opacidad_50_lntjxw.png",
   },
   {
     id: "img3",
@@ -28,6 +28,7 @@ const Home = () => {
   return (
     <div className="home">
       <Carousel>
+        
         {imagenes.map(({ id, url }) => (
           <Carousel.Item key={id}>
             {window.innerWidth > 600 ? (

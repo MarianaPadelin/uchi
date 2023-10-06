@@ -1,7 +1,7 @@
 import { AboutContainer } from "../components/pages/about/AboutContainer";
 import { ContactoContainer } from "../components/pages/contacto/ContactoContainer";
-import { Detalle } from "../components/pages/detalle/Detalle";
-// import { DetalleContainer } from "../components/pages/detalle/DetalleContainer";
+import { DetalleContainer } from "../components/pages/detalle/DetalleContainer";
+// import { Detalle } from "../components/pages/detalle/Detalle";
 import HomeContainer from "../components/pages/home/HomeContainer";
 import { InfoContainer } from "../components/pages/info/InfoContainer";
 import { ProductosContainer } from "../components/pages/productos/ProductosContainer";
@@ -40,7 +40,12 @@ export const routesApp = [
   },
   {
     id: "detalle",
-    path: "/productos/:id",
-    Element: Detalle,
+    path: "/detalleProducto/:id",
+    Element: DetalleContainer,
+  },
+  {
+    id: "categoria",
+    path: "/productos/:nombreCategoria",
+    Element: ProductosContainer,
   },
 ];
