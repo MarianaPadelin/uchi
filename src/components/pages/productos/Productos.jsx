@@ -12,11 +12,18 @@ export const Productos = ({items}) => {
       </div>
 
       <div className="categorias">
-        <Link to="/productos/suribachi">Suribachis</Link>
-        <Link to="/productos/chawan">Chawan</Link>
-        <Link to="/productos/hangiri">Hangiri</Link>
-        <Link to="/productos/accesorios">Accesorios</Link>
-        <Link to="/productos">Ver todos</Link>
+        <Link className="link" to="/productos/suribachi">
+          Suribachis
+        </Link>
+        <Link className="link" to="/productos/chawan">
+          Chawan
+        </Link>
+        <Link className="link" to="/productos/hangiri">
+          Hangiri
+        </Link>
+        <Link className="link" to="/productos/accesorios">
+          Accesorios
+        </Link>
       </div>
       <ImageList className="listadoFotos" cols={3} gap={10}>
         {items.map(({ id, img1, title }) => (
@@ -41,6 +48,9 @@ export const Productos = ({items}) => {
           </ImageListItem>
         ))}
       </ImageList>
+      <Link className="link" to="/productos">
+        Ver todos
+      </Link>
     </div>
   );
 }
