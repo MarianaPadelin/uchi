@@ -6,7 +6,7 @@ export const ImagenesDesktop = ({seleccionado}) => {
   return (
     <div>
       <ImageList
-        sx={{ width: 500, height: 400 }}
+        sx={{ width: 500, height: 450 }}
         variant="quilted"
         cols={4}
         gap={8}
@@ -24,9 +24,9 @@ export const ImagenesDesktop = ({seleccionado}) => {
   
           />
         </ImageListItem>
-        <ImageListItem cols={2}>
+        <ImageListItem cols={2} rows={1.5}>
           <img
-            style={{ marginBottom: "1vh", height: "17vw" }}
+            style={{ marginBottom: "1vh" }}
             className="imagenDetalle"
             src={seleccionado.img2}
             // {...srcset(item.img, 121, item.rows, item.cols)}
@@ -35,9 +35,9 @@ export const ImagenesDesktop = ({seleccionado}) => {
             // onClick={`window.open${seleccionado.img1}`}
             // role="button"
           />
-          <ImageListItem cols={2}>
+          <ImageListItem cols={2} rows={1.5}>
             <img
-              style={{ marginTop: "1vh", height: "17vw" }}
+              style={{ marginTop: "1vh" }}
               className="imagenDetalle"
               src={seleccionado.img3}
               // {...srcset(item.img, 121, item.rows, item.cols)}
