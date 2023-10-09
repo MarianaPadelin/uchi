@@ -12,21 +12,21 @@ const images = [
     url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696427462/uchi/Suribachi_detalle_omii2d.jpg",
     title: "Suribachi",
     width: "25%",
-    path: "/productos",
+    path: "/productos/suribachi",
   },
   {
     id: "2",
     url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696429529/uchi/Chawan_qyriqw.jpg",
     title: "Chawan",
     width: "25%",
-    path: "/servicios",
+    path: "/productos/chawan",
   },
   {
     id: "3",
     url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696429584/uchi/Hangiri_uso_nuu3bv.jpg",
     title: "Hangiri",
     width: "25%",
-    path: "/",
+    path: "/productos/hangiri",
   },
 ];
 

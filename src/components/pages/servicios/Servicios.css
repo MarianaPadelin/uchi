@@ -1,27 +1,18 @@
-.servicios{
-    background-color: #f4f4f4;
-    min-height: 30vh;
-    color: #a2988e;
-    margin-top: 1vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.servicios {
+  background-color: #f4f4f4;
+  min-height: 30vh;
+  color: #a2988e;
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.listadoServicios{
-    display: grid;
-    justify-content: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
-
+.listadoServicios {
+  display: grid;
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
-#link1{
-
-
-    display:flex;
-    margin-right: 80%;
-    margin-bottom: 20vh;
-}

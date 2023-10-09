@@ -10,7 +10,7 @@ export const Servicios = () => {
         <h1>Nuestros servicios</h1>
         <p>Párrafo descriptivo</p>
       </div>
-      <div id="link1">
+      <div className="link1">
         <Link style={{ color:"black"}} to="/productos">Volver a la colección</Link>
       </div>
 
