@@ -16,3 +16,14 @@
   background-color:white;
 }
 
+
+.contactoFooter{
+  align-self: baseline;
+}
+
+@media only screen and (max-width: 600px){
+    .contactoFooter{
+        display:flex;
+        flex-direction: column;
+    }
+}

@@ -1,10 +1,12 @@
+
+import { ContactoDesktop } from "./ContactoDesktop";
+import { ContactoCelu } from "./ContactoCelu";
+
 export const Contacto = () => {
   return (
-    <div className="productos">
-      <div className="titulos">
-        <h1>Contacto</h1>
-        <p>Párrafo descriptivo</p>
-      </div>
+    <div>
+      {window.innerWidth > 700 ? <ContactoDesktop /> : <ContactoCelu />}
+     
     </div>
   );
 };

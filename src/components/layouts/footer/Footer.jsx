@@ -69,16 +69,21 @@ const Footer = () => {
       </div> */}
       <Divider />
       <div className="redes">
-        <Div style={{ alignSelf: "baseline" }}>
+        <Div className="contactoFooter">
           <h6>Contacto </h6>
-          <Link
-            style={{ color: "inherit" }}
-            to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
-            target="_blank"
-          >
-            <WhatsAppIcon />
-          </Link>
-          <EmailIcon fontSize="small" /> hola@uchi.com.ar Num celu
+          <p>
+            <EmailIcon fontSize="small" /> hola@uchi.com.ar
+          </p>
+          <p>
+            <Link
+              style={{ color: "inherit" }}
+              to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
+              target="_blank"
+            >
+              <WhatsAppIcon />
+            </Link>
+            +54 0000 0000
+          </p>
         </Div>
         <Divider className="divider" orientation="vertical" flexItem />
         <Div>
@@ -88,7 +93,7 @@ const Footer = () => {
             to="https://www.youtube.com/channel/UCZyzYTcjeYO-M1M48_XiM2Q"
             target="_blank"
           >
-            <YouTubeIcon  />
+            <YouTubeIcon />
           </Link>
           <Link
             style={{ color: "inherit" }}
