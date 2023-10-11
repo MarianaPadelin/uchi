@@ -3,12 +3,11 @@ import "./Servicios.css"
 
 export const Servicios = () => {
   return (
-    <div className="servicios" id="servicios">
+    <div className="homeServicios" id="servicios">
       <h1>SERVICIOS</h1>
       <h3>Descripción de los servicios</h3>
-      <Button className="botonera"
+      <Button className="botonera2"
         variant="contained"
-        size="large"
         href="/servicios"
       >
         Ver más

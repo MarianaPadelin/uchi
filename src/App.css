@@ -6,24 +6,41 @@
 
 .botonera{
     background-color: #719c7e!important;
-    margin: 1vh!important;
-    width:40%;
-    border-radius: 2vw!important;
+    width:134px;
+    height: 48px;
+    border-radius: 20px!important;
+    font-size: 20;
+    color:#ffffff;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-style: hidden;
+    text-align: center;
+
 }
+
+.botonera:hover{
+    background-color: #5b7964!important;
+}
+
+
 
 .botonera2{
-    background-color: #719c7e!important;
-    margin: 1vh!important;
-    width:15%;
-    border-radius: 2vw!important;
+    background-color: #f6f7f4!important;
+    width:120px;
+    height: 48px;
+    border-radius: 20px!important;
+    font-size: 20;
+    color:#333333!important;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-style:double!important;
+    border-width: 1px;
+    border-color: #333333;
+    text-align: center;
 }
 
-@media only screen and (max-width: 600px){
-    .botonera2{
-        width:40%;
-    }
+.botonera2:hover{
+    background-color: #cdd2c2!important;
 }

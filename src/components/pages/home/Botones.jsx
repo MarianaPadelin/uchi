@@ -9,21 +9,21 @@ import { Button } from "@mui/material";
 const images = [
   {
     id: "1",
-    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696427462/uchi/Suribachi_detalle_omii2d.jpg",
+    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697034381/uchi/inicio/IMG_7194_2_bnlqq7.jpg",
     title: "Suribachi",
     width: "25%",
     path: "/productos/suribachi",
   },
   {
     id: "2",
-    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696429529/uchi/Chawan_qyriqw.jpg",
+    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697034467/uchi/inicio/IMG_9637_1_fgnixn.jpg",
     title: "Chawan",
     width: "25%",
     path: "/productos/chawan",
   },
   {
     id: "3",
-    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696429584/uchi/Hangiri_uso_nuu3bv.jpg",
+    url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697034499/uchi/inicio/Contexto_01_b6xkw7.jpg",
     title: "Hangiri",
     width: "25%",
     path: "/productos/hangiri",
@@ -144,9 +144,7 @@ export default function ButtonBaseDemo() {
         <Button
           className="botonera"
           variant="contained"
-          size="large"
           href="/productos"
-        
         >
           Ver todos
         </Button>

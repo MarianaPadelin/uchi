@@ -1,5 +1,4 @@
-
-export const ImagenesCelular = ({seleccionado}) => {
+export const ImagenesCelular = ({ seleccionado }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <img className="imagenesCelu" src={seleccionado.img1}></img>
@@ -7,4 +6,4 @@ export const ImagenesCelular = ({seleccionado}) => {
       <img className="imagenesCelu" src={seleccionado.img3}></img>
     </div>
   );
-}
+};

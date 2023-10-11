@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import "./Detalle.css"
 import {  Button } from "@mui/material";
-import { ImagenesDesktop } from "./ImagenesDesktop";
-import { ImagenesCelular } from "./ImagenesCelular";
+import { ImagenesDesktop } from "./imagenesDesktop";
+import { ImagenesCelular } from "./imagenesCelular";
+
 
 
 
@@ -49,7 +50,7 @@ export const Detalle = ( { seleccionado } ) => {
       </div>
       <Button
         variant="contained"
-        className="botonera2"
+        className="botonera"
         href={`/productos/${seleccionado.categoria}`}
       >
         Más {seleccionado.categoria}

@@ -1,7 +1,6 @@
 import { ImageList, ImageListItem } from "@mui/material";
 
-export const ImagenesDesktop = ({seleccionado}) => {
-
+export const ImagenesDesktop = ({ seleccionado }) => {
   //no abre la foto en grande
   return (
     <div>
@@ -21,7 +20,6 @@ export const ImagenesDesktop = ({seleccionado}) => {
             loading="lazy"
             // onClick={window.open(seleccionado.img1)}
             // role="button"
-  
           />
         </ImageListItem>
         <ImageListItem cols={2} rows={1.5}>
@@ -51,4 +49,4 @@ export const ImagenesDesktop = ({seleccionado}) => {
       </ImageList>
     </div>
   );
-}
+};

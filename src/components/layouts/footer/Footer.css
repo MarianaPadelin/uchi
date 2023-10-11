@@ -4,7 +4,7 @@
 
 .redes {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #f4f4f4;
   color:#3a3a3a;
@@ -18,7 +18,9 @@
 
 
 .contactoFooter{
-  align-self: baseline;
+  display: flex!important;
+  justify-content: center;
+  gap:96px;
 }
 
 @media only screen and (max-width: 600px){
