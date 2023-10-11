@@ -8,6 +8,7 @@
   align-items: center;
   background-color: #f4f4f4;
   color:#3a3a3a;
+  height: 161px;
 
 }
 
@@ -20,6 +21,7 @@
 .contactoFooter{
   display: flex!important;
   justify-content: center;
+  align-items: center;
   gap:96px;
 }
 
@@ -27,5 +29,7 @@
     .contactoFooter{
         display:flex;
         flex-direction: column;
+       justify-content: center;
+       gap:10px;
     }
 }

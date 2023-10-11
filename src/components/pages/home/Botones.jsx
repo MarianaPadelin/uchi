@@ -11,32 +11,32 @@ const images = [
     id: "1",
     url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697034381/uchi/inicio/IMG_7194_2_bnlqq7.jpg",
     title: "Suribachi",
-    width: "25%",
+    width: "318px",
     path: "/productos/suribachi",
   },
   {
     id: "2",
     url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697034467/uchi/inicio/IMG_9637_1_fgnixn.jpg",
     title: "Chawan",
-    width: "25%",
+    width: "318px",
     path: "/productos/chawan",
   },
   {
     id: "3",
     url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697034499/uchi/inicio/Contexto_01_b6xkw7.jpg",
     title: "Hangiri",
-    width: "25%",
+    width: "318px",
     path: "/productos/hangiri",
   },
 ];
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
-  height: 200,
+  height: "318px",
 
   [theme.breakpoints.down("sm")]: {
     width: "100% !important", // Overrides inline-style
-    height: 200,    
+    height: "318px",    
 
   },
   "&:hover, &.Mui-focusVisible": {
@@ -61,7 +61,7 @@ const ImageSrc = styled("span")({
   bottom: 0,
   backgroundSize: "cover",
   backgroundPosition: "center 40%",
-  borderRadius: "3vw",
+  borderRadius: "20px",
 });
 
 const Image = styled("span")(({ theme }) => ({
@@ -85,7 +85,7 @@ const ImageBackdrop = styled("span")(({ theme }) => ({
   backgroundColor: theme.palette.common.black,
   opacity: 0.4,
   transition: theme.transitions.create("opacity"),
-  borderRadius: "3vw",
+  borderRadius: "20px",
 }));
 
 const ImageMarked = styled("span")(({ theme }) => ({
@@ -96,7 +96,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
   bottom: -2,
   left: "calc(50% - 9px)",
   transition: theme.transitions.create("opacity"),
-  borderRadius: "3vw",
+  borderRadius: "20px",
 }));
 
 export default function ButtonBaseDemo() {
@@ -109,13 +109,12 @@ export default function ButtonBaseDemo() {
             key={id}
             style={{
               width: width,
-              marginLeft: "3vw",
-              marginRight: "3vw",
-              marginBottom: "2vh",
+              marginLeft: "12px",
+              marginRight: "12px",
+              marginBottom:"12px",
               display: "flex",
               justifyContent: "center",
-              borderRadius:"3vw"
-              //poner bordes redondeados
+              borderRadius: "20px",
             }}
             href={path}
           >
@@ -141,14 +140,12 @@ export default function ButtonBaseDemo() {
             </Image>
           </ImageButton>
         ))}
-        <Button
-          className="botonera"
-          variant="contained"
-          href="/productos"
-        >
+      </Box>
+      <div style={{ display: "flex", justifyContent: "center", marginTop:"68px", marginBottom:"68px" }}>
+        <Button className="botonera" variant="contained" href="/productos">
           Ver todos
         </Button>
-      </Box>
+      </div>
     </div>
   );
 }
