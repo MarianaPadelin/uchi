@@ -117,4 +117,14 @@ export const productosCompletos = [
     descripcion: "",
     categoria: "accesorios",
   },
+  {
+    id: "12",
+    path: "/productos/oportunidades",
+    title: "Oportunidades",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696512124/uchi/Accesorios/IMG_6449_jpg_dk5eqr.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696941695/uchi/Accesorios/IMG_5450_jpg_at47yt.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696941692/uchi/Accesorios/IMG_5447_jpg_bnmyyi.jpg",
+    descripcion: "",
+    categoria: "accesorios",
+  },
 ];

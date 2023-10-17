@@ -1,4 +1,4 @@
-import {Button, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+import {Button, Chip, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import "./Productos.css"
 import { Link } from "react-router-dom";
 
@@ -25,21 +25,22 @@ export const Productos = ({items}) => {
           Accesorios
         </Link>
       </div>
-      <ImageList className="listadoFotos" cols={3} gap={10}>
+      <ImageList className="listadoFotos" cols={3}>
         {items.map(({ id, img1, title }) => (
           <ImageListItem key={id}>
             <img
-              src={`${img1}?w=164&h=164&fit=crop&auto=format`}
+              className="fotoProducto"
+              src={img1}
               alt={title}
               loading="lazy"
-              style={{ borderRadius: "3vw" }}
+              
             />
             <ImageListItemBar
-              style={{ borderRadius: "3vw", background: "none" }}
-              title={title}
+              className="barraInfo"
+              title={<Chip color="warning" label={title} />}
               actionIcon={
                 <Link to={`/detalleProducto/${id}`}>
-                  <Button variant="text" style={{ color: "#f4f4f4" }}>
+                  <Button variant="text" style={{backgroundColor:"white", opacity:"90%", color:"black",borderRadius:"20px", marginRight:"4px"}}>
                     Ver
                   </Button>
                 </Link>

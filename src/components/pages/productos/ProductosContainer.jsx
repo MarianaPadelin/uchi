@@ -28,6 +28,7 @@ export const ProductosContainer = () => {
       .catch((err) => console.log(err));
   }, [nombreCategoria]);
 
+  
 
   return (
     <div>

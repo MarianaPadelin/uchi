@@ -7,13 +7,14 @@ import { servicios } from "../../../routes/servicios.js";
 import { informacion } from "../../../routes/informacion.js";
 import "./Navbar.css";
 
-function Navbarcompleto() {
+export const NavbarDesktop = () => {
   return (
     <div>
       <Navbar expand="md" className="Navbar">
         <Container className="Container">
           <Navbar.Brand href="/">
-            <img className="logoNavbar"
+            <img
+              style={{ height:"80px", marginRight:"100px" }}
               src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696427102/uchi/02-Logo_Horiz_Mediano_Positivo_i2xbz7.png"
             ></img>
           </Navbar.Brand>
@@ -54,6 +55,4 @@ function Navbarcompleto() {
       </Navbar>
     </div>
   );
-}
-
-export default Navbarcompleto;
+};
