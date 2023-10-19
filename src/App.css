@@ -27,7 +27,8 @@
 
 .botonera2{
     background-color: #f6f7f4!important;
-    width:120px;
+    min-width: 120px;
+    max-width:fit-content;
     height: 48px;
     border-radius: 20px!important;
     font-size: 20;
@@ -43,4 +44,25 @@
 
 .botonera2:hover{
     background-color: #cdd2c2!important;
+}
+
+
+.link {
+  color: black;
+  margin: 1vw;
+}
+
+.link1 {
+  display: flex;
+  margin-right: 80%;
+  margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .link1 {
+    display: flex;
+    margin-left: 5%;
+    flex-wrap: nowrap;
+    margin-right: 60%;
+  }
 }

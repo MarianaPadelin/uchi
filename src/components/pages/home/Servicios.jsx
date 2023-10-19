@@ -3,12 +3,15 @@ import "./Servicios.css"
 
 export const Servicios = () => {
   return (
-    <div className="homeServicios" id="servicios">
-      <h1>SERVICIOS</h1>
-      <h5>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </h5>
+    <div className="homeServicios">
+      <h2>SERVICIOS</h2>
+      <h6>
+        Diseño, desarrollo y produzco objetos, desde packaging a espacios. El
+        resultado final es producto del desarrollo en base a las necesidades
+        funcionales y requerimientos estéticos del caso. La relación entre la
+        materialización, función y uso de los elementos es clave. Así también el
+        mensaje o idea que se quiere transmitir.
+      </h6>
       <Button className="botonera2" variant="contained" href="/servicios">
         Ver más
       </Button>

@@ -16,11 +16,11 @@ export const AboutCelular = () => {
           y la tradición que cada familia transmite generación tras generación.
         </p>
         <p>
-          Consideramos fundamental la idea de crear nuestro habitar rodeados de
-          objetos perdurables en el tiempo, realizados a partir de materias
-          primas locales.. Brindándoles los cuidados adecuados, nuestros
-          productos pueden formar parte de cada hogar por generaciones,
-          manifestando a partir de su uso la belleza del paso del tiempo.
+          En UCHI creemos en la idea de que este espacio propio debe ser
+          habitado por objetos perdurables que con los cuidados adecuados,
+          puedan formar parte de cada hogar por generaciones. La belleza se
+          reflejará, de esta manera, doblemente: en el objeto en sí y en el
+          efecto que produce el paso del tiempo.
         </p>
       </div>
       <img

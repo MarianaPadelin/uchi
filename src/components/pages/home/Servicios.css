@@ -3,6 +3,8 @@
   min-height: 30vh;
   color: black;
   margin-top: 2vh;
+  padding-left: 20%;
+  padding-right: 20%;
   display: flex;
   justify-content: center;
   align-items: center;

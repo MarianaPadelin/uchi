@@ -18,7 +18,10 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 5vw;
+  padding-left: 20%;
+  padding-right: 20%;
 }
+
 
 .imagenesCelu{
   width: 90vw;

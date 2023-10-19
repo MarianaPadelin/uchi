@@ -5,13 +5,13 @@ export const AboutDesktop = () => {
     <div>
       <div className="imagenesDesktop">
         <ImageList
-          sx={{ width: 500, height: 450 }}
+          sx={{ width: 800 }}
           variant="quilted"
-          cols={4}
+          cols={6}
           gap={8}
           rowHeight={121}
         >
-          <ImageListItem cols={2} rows={3}>
+          <ImageListItem cols={3} rows={4}>
             <img
               className="imagenDetalle"
               src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696936334/uchi/about/IMG_5815_jpg_mvavfw.jpg"
@@ -22,7 +22,7 @@ export const AboutDesktop = () => {
               // role="button"
             />
           </ImageListItem>
-          <ImageListItem cols={2} rows={1.5}>
+          <ImageListItem cols={3} rows={2}>
             <img
               style={{ marginBottom: "1vh" }}
               className="imagenDetalle"
@@ -33,7 +33,7 @@ export const AboutDesktop = () => {
               // onClick={`window.open${seleccionado.img1}`}
               // role="button"
             />
-            <ImageListItem cols={2} rows={1.5}>
+            <ImageListItem cols={3} rows={2}>
               <img
                 style={{ marginTop: "1vh" }}
                 className="imagenDetalle"
@@ -59,11 +59,11 @@ export const AboutDesktop = () => {
           y la tradición que cada familia transmite generación tras generación.
         </p>
         <p>
-          Consideramos fundamental la idea de crear nuestro habitar rodeados de
-          objetos perdurables en el tiempo, realizados a partir de materias
-          primas locales.. Brindándoles los cuidados adecuados, nuestros
-          productos pueden formar parte de cada hogar por generaciones,
-          manifestando a partir de su uso la belleza del paso del tiempo.
+          En UCHI creemos en la idea de que este espacio propio debe ser
+          habitado por objetos perdurables que con los cuidados adecuados,
+          puedan formar parte de cada hogar por generaciones. La belleza se
+          reflejará, de esta manera, doblemente: en el objeto en sí y en el
+          efecto que produce el paso del tiempo.
         </p>
       </div>
       <div className="aboutDetalle">

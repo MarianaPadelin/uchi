@@ -80,22 +80,4 @@
   }
 }
 
-.link {
-  color: black;
-  margin: 1vw;
-}
 
-.link1 {
-  display: flex;
-  margin-right: 80%;
-  margin-bottom: 10vh;
-}
-
-@media only screen and (max-width: 600px) {
-  .link1 {
-    display: flex;
-    margin-left: 5%;
-    flex-wrap: nowrap;
-    margin-right: 60%;
-  }
-}
