@@ -25,6 +25,7 @@ export const DetalleContainer = () => {
   return (
 
   //  <Detalle seleccionado={ seleccionado } />
+
     <div> {seleccionado.id ? (<Detalle seleccionado={seleccionado} />) : (<Loader />) }</div>
   )
 }

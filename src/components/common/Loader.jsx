@@ -1,4 +1,5 @@
-import { Button } from "react-bootstrap";
+
+import { Button } from "@mui/material";
 import { SkewLoader } from "react-spinners";
 
 
@@ -8,12 +9,17 @@ const Loader = () => {
       style={{
         display: "flex",
         justifyContent: "center",
-        marginTop: "2vh",
+        alignItems:"center",
+        flexDirection:"column",
+        marginTop: "20vh",
+        width: "100%",
       }}
     >
-      <SkewLoader color="#36d7b7" />
+      <SkewLoader color="#a2988e" size={70} />
 
-      <Button href="/" className="botonera"> Volver al inicio</Button>
+      <Button href="/" className="botonera" style={{marginTop:"20vh"}} variant="contained">
+        Volver al inicio
+      </Button>
     </div>
   );
 }
