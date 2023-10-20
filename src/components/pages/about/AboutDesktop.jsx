@@ -5,7 +5,7 @@ export const AboutDesktop = () => {
     <div>
       <div className="imagenesDesktop">
         <ImageList
-          sx={{ width: 800 }}
+          sx={{ width: 800, marginBottom:"10vh" }}
           variant="quilted"
           cols={6}
           gap={8}

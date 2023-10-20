@@ -5,31 +5,49 @@
 .redes {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   background-color: #f4f4f4;
-  color:#3a3a3a;
-  height: 161px;
-
+  color: #3a3a3a;
+  padding-bottom: 48px;
+  padding-top: 48px;
 }
 
-
-.divider{
-  background-color:white;
-}
-
-
-.contactoFooter{
-  display: flex!important;
+.contactoFooter {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap:96px;
+  align-items: left;
+  gap: 8px;
 }
 
-@media only screen and (max-width: 600px){
-    .contactoFooter{
-        display:flex;
-        flex-direction: column;
-       justify-content: center;
-       gap:10px;
-    }
+.soloTitulo {
+  font-size: 25px;
+}
+
+.mediosDeContacto {
+  display: flex;
+  gap: 96px;
+}
+
+.redes2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    font-size: 18px !important;
+  }
+  .mediosDeContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
 }

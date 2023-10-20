@@ -1,6 +1,6 @@
 export const AboutCelular = () => {
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div className="aboutCelu">
       <img
         className="imagenesCelu"
         src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696936336/uchi/about/IMG_1088_jpg_ai8zfh.jpg"
