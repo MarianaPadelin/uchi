@@ -2,30 +2,29 @@
   background-color: #f4f4f4;
   padding-top: 48px !important;
   padding-bottom: 48px !important;
-  padding-left: 48px!important;
-  padding-right: 48px!important;
+  padding-left: 48px !important;
+  padding-right: 48px !important;
   color: #fbfcef;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
-    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(228, 202, 202, 0.12) 0px 1px 10px 0px;
-
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+    rgba(228, 202, 202, 0.12) 0px 1px 10px 0px;
 }
 
 
-#basic-navbar-nav > div {
+#responsive-navbar-nav > div {
   gap: 48px;
 }
 .nav-link {
   padding: none;
 }
 
-#basic-navbar-nav > div > div.nav-item.show.dropdown > div > a{
+#responsive-navbar-nav > div > div.nav-item.show.dropdown > div > a {
   font-size: 20px;
 }
 
-.logoNavbar{
-  height:80px;
-
+.logoNavbar {
+  height: 80px;
 }
 .Container {
   margin: 0;
@@ -33,6 +32,11 @@
   display: flex;
   flex-wrap: nowrap;
   font-size: 24px;
+}
+
+.Container2{
+  display: grid;
+  justify-content: end;
 
 }
 
@@ -40,18 +44,23 @@
   #root > div:nth-child(1) > nav > div {
     display: flex;
     flex-wrap: nowrap;
- 
+    padding: 0;
   }
-  #basic-navbar-nav > div {
+  #responsive-navbar-nav > div {
     gap: 0px;
   }
 
-  .logoNavbar{
-    height:60px;
+  .logoNavbar {
+    height: 60px;
     margin-right: 0;
   }
 
   button {
     width: 50px;
+  }
+
+  .Container2{
+    display: block;
+
   }
 }

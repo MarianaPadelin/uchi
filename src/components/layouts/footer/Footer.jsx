@@ -36,7 +36,7 @@ const Footer = () => {
 
 
         <div className="redes2">
-          <h4>Seguinos en</h4>
+          <h4 className="soloTitulo">Seguinos en</h4>
           <div className="subRedes">
             <Link
               style={{ color: "inherit" }}

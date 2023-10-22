@@ -9,7 +9,7 @@ import "./Navbar.css";
 function Navbarcompleto() {
   return (
     <div>
-      <Navbar expand="md" className="Navbar">
+      <Navbar collapseOnSelect expand="md" className="Navbar">
         <Container className="Container">
           <Navbar.Brand href="/">
             <img
@@ -17,9 +17,9 @@ function Navbarcompleto() {
               src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696427102/uchi/02-Logo_Horiz_Mediano_Positivo_i2xbz7.png"
             ></img>
           </Navbar.Brand>
-          <Container style={{ display: "grid", justifyContent: "end" }}>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+          <Container className="Container2">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <NavDropdown title="Productos" id="basic-nav-dropdown">
                   <NavDropdown.Item href="/productos">
@@ -32,10 +32,10 @@ function Navbarcompleto() {
                   ))}
                 </NavDropdown>
                 <NavDropdown title="Servicios" id="basic-nav-dropdown">
-                  <NavDropdown.Item  href="/servicios">
+                  <NavDropdown.Item href="/servicios">
                     Todos los servicios
                   </NavDropdown.Item>
-                  <NavDropdown.Item  href="servicios/interiorismo">
+                  <NavDropdown.Item href="servicios/interiorismo">
                     Interiorismo
                   </NavDropdown.Item>
                 </NavDropdown>

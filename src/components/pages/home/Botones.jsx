@@ -102,7 +102,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
 export default function ButtonBaseDemo() {
   return (
     <div>
-      <Box className="botones" id="botones">
+      <Box className="botones" id="botonera">
         {images.map(({ id, title, path, url, width }) => (
           <ImageButton
             focusRipple

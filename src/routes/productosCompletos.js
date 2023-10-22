@@ -141,6 +141,8 @@ export const productosCompletos = [
       "Limpiar con esponja suave y jabón neutro, dejar secar al aire libre. No exponer directamente al sol. Guardar en un espacio libre de humedad, de manera horizontal apoyado sobre su base. No guardar de forma lateral. Si no se lava adecuadamente es posible que aparezcan manchas oscuras. Estas pueden eliminarse usando jugo de limón, bicarbonato y lija suave (grano 500). No usar esponja metálica. Existe la posibilidad de que las piezas de madera natural y alpaca se oscurezcan con el paso del tiempo. En caso de que esto ocurra es posible quitar las manchas oscuras utilizando una lija suave (grano 500). En caso de que los aros metálicos se aflojen por el trabajo de los materiales corregir la posición deslizándolos desde la base hacia la cara superior del hangiri hasta que traben por forma. Los aros quedarán más firmes si se ajustan con un taco suave de madera y martillo.",
     categoria: "hangiri",
     enlace: "https://www.uchi.com.ar/hangiri/hangiri-sushi-oke",
+    video1: "https://www.youtube.com/embed/2EaE0yN5EAQ?si=5d4gpaxDzobNqi0_",
+    video2: "https://www.youtube.com/embed/p9J02MZJaNE?si=quu8MbEJD3eqvXmk",
   },
   {
     id: "9",

@@ -50,12 +50,18 @@
 .link {
   color: black;
   margin: 1vw;
+  font-size: 18px;
 }
 
 .link1 {
   display: flex;
   margin-right: 80%;
   margin-bottom: 10vh;
+  font-size: 18px;
+}
+
+p{
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {

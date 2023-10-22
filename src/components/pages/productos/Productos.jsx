@@ -1,9 +1,13 @@
-import {Button, Chip, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
-import "./Productos.css"
+import {
+  Chip,
+  ImageList,
+  ImageListItem,
+  ImageListItemBar,
+} from "@mui/material";
+import "./Productos.css";
 import { Link } from "react-router-dom";
 
-
-export const Productos = ({items}) => {
+export const Productos = ({ items }) => {
   return (
     <div className="productos">
       <div className="titulos">
@@ -40,21 +44,32 @@ export const Productos = ({items}) => {
             />
             <ImageListItemBar
               className="barraInfo"
-              title={<Chip color="warning" label={title} />}
+              title={
+                <Chip
+                  style={{
+                    backgroundColor: "#f6f7f4",
+                    opacity: "100%",
+                    borderRadius: "20px",
+                    fontSize: "20px",
+                    
+                  }}
+                 
+                  label={title}
+                />
+              }
               actionIcon={
                 <Link to={`/detalleProducto/${id}`}>
-                  <Button
-                    variant="text"
+                  <Chip
                     style={{
-                      backgroundColor: "white",
-                      opacity: "90%",
-                      color: "black",
+                      backgroundColor: "#f6f6f4",
+                      opacity: "70%",
                       borderRadius: "20px",
                       marginRight: "4px",
+                      fontSize: "18px",
+                      textDecoration: "underline",
                     }}
-                  >
-                    Ver
-                  </Button>
+                    label="Ver"
+                  ></Chip>
                 </Link>
               }
             />
@@ -66,4 +81,4 @@ export const Productos = ({items}) => {
       </Link>
     </div>
   );
-}
+};

@@ -1,6 +1,6 @@
 import { Carousel } from "react-bootstrap";
 import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
-import { Link } from "@mui/material";
+
 
 
 export const HomeDesktop = () => {
@@ -31,9 +31,9 @@ export const HomeDesktop = () => {
               <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696427102/uchi/02-Logo_Horiz_Mediano_Positivo_i2xbz7.png"></img>
               <h3 style={{ color: "#3a3a3a" }}>Slogan</h3>
 
-              <Link
+              <a
                 style={{ textDecoration: "none", color: "inherit" }}
-                to="#servicios"
+                href="#botonera"
               >
                 <h3 id="autoscroll" style={{ color: "#3a3a3a" }}>
                   Descubre nuestros productos
@@ -43,7 +43,7 @@ export const HomeDesktop = () => {
                   fontSize="large"
                   style={{ color: "#3a3a3a" }}
                 />
-              </Link>
+              </a>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

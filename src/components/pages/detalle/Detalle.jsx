@@ -1,15 +1,10 @@
 import { Link } from "react-router-dom";
-import "./Detalle.css"
-import {  Button } from "@mui/material";
+import "./Detalle.css";
+import { Button } from "@mui/material";
 import { ImagenesDesktop } from "./ImagenesDesktop";
 import { ImagenesCelular } from "./ImagenesCelular";
 
-
-
-
-
-export const Detalle = ( { seleccionado } ) => {
-
+export const Detalle = ({ seleccionado }) => {
   return (
     <div className="detalle">
       <div className="titulos">
@@ -28,10 +23,13 @@ export const Detalle = ( { seleccionado } ) => {
         <ImagenesCelular seleccionado={seleccionado} />
       )}
 
-      <div className="titulos">{seleccionado.especificaciones}</div>
+      <div className="titulos">
+        <p>{seleccionado.especificaciones}</p>
+      </div>
       <div className="titulos">
         <h2>Datos del producto</h2>
-        {seleccionado.medidas}
+        <p>{seleccionado.medidas}</p>
+
         <Button
           variant="contained"
           href={seleccionado.enlace}
@@ -44,7 +42,7 @@ export const Detalle = ( { seleccionado } ) => {
 
       <div className="cuidados">
         <h2>Cuidados del producto</h2>
-        {seleccionado.cuidados}
+        <p>{seleccionado.cuidados}</p>
       </div>
       <Button
         variant="contained"
@@ -53,6 +51,26 @@ export const Detalle = ( { seleccionado } ) => {
       >
         Más {seleccionado.categoria}
       </Button>
+
+      {seleccionado.video1 && (
+        <iframe
+          width="300"
+          height="200"
+          style={{margin:"10px"}}
+          src={seleccionado.video1}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
+      )}
+      {seleccionado.video2 && (
+        <iframe
+          width="300"
+          height="200"
+          src={seleccionado.video2}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
+      )}
     </div>
   );
 };

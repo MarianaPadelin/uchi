@@ -8,7 +8,13 @@ export const ServiciosCelular = () => {
     <div className="servicios">
       <div className="titulos">
         <h1>Nuestros servicios</h1>
-        <p>Párrafo descriptivo</p>
+        <p>
+          Diseño, desarrollo y produzco objetos, desde packaging a espacios. El
+          resultado final es producto del desarrollo en base a las necesidades
+          funcionales y requerimientos estéticos del caso. La relación entre la
+          materialización, función y uso de los elementos es clave. Así también
+          el mensaje o idea que se quiere transmitir.
+        </p>
       </div>
       <div className="link1">
         <Link style={{ color: "black" }} to="/productos">
@@ -46,7 +52,7 @@ export const ServiciosCelular = () => {
               style={{ borderRadius: "3vw", width: "40%", height: "100px" }}
             />
             <h3>{title}</h3>
-            <h6>{descripcion}</h6>
+            <h5>{descripcion}</h5>
             <Link className="link" to="/servicios/interiorismo">
               {boton}
             </Link>

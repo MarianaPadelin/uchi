@@ -24,3 +24,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media only screen and (max-width: 600px){
+ .aboutDetalle{
+  padding:0;
+  margin: 20px;
+ }
+}
