@@ -8,7 +8,7 @@ export const ImagenesDesktop = ({ seleccionado }) => {
         sx={{ width: 800, marginBottom:"0"}}
         variant="quilted"
         cols={6}
-        gap={8}
+        gap={24}
         rowHeight={121}
       >
         <ImageListItem cols={3} rows={4}>
@@ -22,7 +22,7 @@ export const ImagenesDesktop = ({ seleccionado }) => {
         </ImageListItem>
         <ImageListItem cols={3} rows={2}>
           <img
-            style={{ marginBottom: "1vh" }}
+            style={{ marginBottom: "24px" }}
             className="imagenDetalle"
             src={seleccionado.img2}
 

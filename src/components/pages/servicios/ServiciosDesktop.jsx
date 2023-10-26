@@ -7,7 +7,7 @@ export const ServiciosDesktop = () => {
   return (
     <div className="servicios">
       <div className="titulos">
-        <h1>Nuestros servicios</h1>
+        <h1 className="tituloParrafo">Nuestros servicios</h1>
         <p>
           Diseño, desarrollo y produzco objetos, desde packaging a espacios. El
           resultado final es producto del desarrollo en base a las necesidades

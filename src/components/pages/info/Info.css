@@ -1,10 +1,27 @@
 .info{
     background-color: #f4f4f4;
-    min-height: 30vh;
-    color: #a2988e;
-    margin-top: 1vh;
+    color: #3a3a3a;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+}
+
+
+.parrafoInfo{
+    margin-left: 218px;
+    margin-top: 128px;
+    max-width: 686px;
+    
+}
+
+.parrafoColumnas{
+    display: flex;
+    columns:2;
+    gap:20px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .parrafoInfo{
+        margin:10px;
+    }
 }

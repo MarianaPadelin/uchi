@@ -1,10 +1,6 @@
 import "./Footer.css";
-import EmailIcon from "@mui/icons-material/Email";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+
 import { Link } from "react-router-dom";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 
 
@@ -23,17 +19,16 @@ const Footer = () => {
                 to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
                 target="_blank"
               >
-                <WhatsAppIcon />
+                <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319402/uchi/iconos/ph_whatsapp-logo-thin_ahnkdg.png" />
                 Whatsapp
               </Link>
             </p>
             <p>
-              <EmailIcon fontSize="small" /> hola@uchi.com.ar
+              hola@uchi.com.ar
             </p>
             <p>+54 0000 0000</p>
           </div>
         </div>
-
 
         <div className="redes2">
           <h4 className="soloTitulo">Seguinos en</h4>
@@ -43,21 +38,21 @@ const Footer = () => {
               to="https://www.youtube.com/channel/UCZyzYTcjeYO-M1M48_XiM2Q"
               target="_blank"
             >
-              <YouTubeIcon />
+              <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319397/uchi/iconos/youtube_qrzg9k.png" />
             </Link>
             <Link
               style={{ color: "inherit" }}
               to="https://www.instagram.com/uchi__ar/"
               target="_blank"
             >
-              <InstagramIcon />
+              <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319462/uchi/iconos/instagram_dhprrb.png" />
             </Link>
             <Link
               style={{ color: "inherit" }}
               to="https://www.uchi.com.ar/"
               target="_blank"
             >
-              <ShoppingCartIcon />
+              <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319400/uchi/iconos/shopping-cart_h9obws.png" />
             </Link>
           </div>
         </div>

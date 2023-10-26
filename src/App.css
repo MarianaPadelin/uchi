@@ -1,51 +1,47 @@
-*{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+* {
+  font-family: Calibri;
 }
 
-
-.botonera{
-    background-color: #719c7e!important;
-    width:134px;
-    height: 48px;
-    border-radius: 20px!important;
-    font-size: 20;
-    color:#ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-style: hidden;
-    text-align: center;
-
+.botonera {
+  background-color: #719c7e !important;
+  min-width: 134px;
+  height: 48px;
+  padding: 20px;
+  border-radius: 20px !important;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: hidden;
+  text-align: center;
 }
 
-.botonera:hover{
-    background-color: #5b7964!important;
+.botonera:hover {
+  background-color: #5b7964 !important;
 }
 
-
-
-.botonera2{
-    background-color: #f6f7f4!important;
-    min-width: 120px;
-    max-width:fit-content;
-    height: 48px;
-    border-radius: 20px!important;
-    font-size: 20;
-    color:#333333!important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-style:double!important;
-    border-width: 1px;
-    border-color: #333333;
-    text-align: center;
+.botonera2 {
+  background-color: #f6f7f4 !important;
+  min-width: 120px;
+  max-width: fit-content;
+  height: 48px;
+  padding: 20px;
+  border-radius: 20px !important;
+  font-size: 20px;
+  color: #333333 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: double !important;
+  border-width: 1px;
+  border-color: #333333;
+  text-align: center;
 }
 
-.botonera2:hover{
-    background-color: #cdd2c2!important;
+.botonera2:hover {
+  background-color: #cdd2c2 !important;
 }
-
 
 .link {
   color: black;
@@ -60,11 +56,36 @@
   font-size: 18px;
 }
 
-p{
+.titulos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 734px;
+  margin-top: 128px;
+  margin-right: 219px;
+  color:black;
+}
+
+.tituloParrafo{
+  font-size: 45px;
+  padding-bottom: 48px;
+}
+
+
+.titulo2{
+  font-size: 35px;
+  padding-bottom: 48px;
+}
+p {
   font-size: 20px;
+  margin-bottom: 40px!important;
 }
 
 @media only screen and (max-width: 600px) {
+  .titulos{
+    display:flex;
+    justify-content: center;
+    margin:10px;
+  }
   .link1 {
     display: flex;
     margin-left: 5%;

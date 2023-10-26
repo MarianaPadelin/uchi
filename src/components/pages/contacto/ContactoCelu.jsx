@@ -1,30 +1,56 @@
-import { Box, Button, TextField } from "@mui/material";
+// import { Box, Button, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import EmailIcon from "@mui/icons-material/Email";
+
 
 export const ContactoCelu = () => {
   return (
     <div>
-      <div className="titulosContacto">
-        <h1>Contacto</h1>
+      <div className="titulos">
+        <h1 className="tituloParrafo">Contacto</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac
-          turpis egestas maecenas.
+          Si te gustaron nuestros productos, querés conocer más sobre nosotros o
+          querés hacernos una consulta no dudes en ponerte en contacto con
+          nosotros.
         </p>
-        <span style={{ display: "flex", justifyContent: "space-evenly", margin:"40%" }}>
+        <p style={{ display: "flex", justifyContent: "center" }}>
+          +54 0000 0000
+          <br />
+          hola@uchi.com.ar
+        </p>
+
+        <div className="redesContacto">
           <Link
-            style={{ color: "inherit" }}
+            style={{ color: "inherit", textDecoration: "none" }}
             to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
             target="_blank"
           >
-            <WhatsAppIcon />
+            <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319402/uchi/iconos/ph_whatsapp-logo-thin_ahnkdg.png" />
           </Link>
-          <EmailIcon fontSize="small" /> hola@uchi.com.ar +54 0000 0000
-        </span>
+          <Link
+            style={{ color: "inherit" }}
+            to="https://www.youtube.com/channel/UCZyzYTcjeYO-M1M48_XiM2Q"
+            target="_blank"
+          >
+            <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319397/uchi/iconos/youtube_qrzg9k.png" />
+          </Link>
+          <Link
+            style={{ color: "inherit" }}
+            to="https://www.instagram.com/uchi__ar/"
+            target="_blank"
+          >
+            <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319462/uchi/iconos/instagram_dhprrb.png" />
+          </Link>
+          <Link
+            style={{ color: "inherit" }}
+            to="https://www.uchi.com.ar/"
+            target="_blank"
+          >
+            <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319400/uchi/iconos/shopping-cart_h9obws.png" />
+          </Link>
+        </div>
       </div>
-      <Box component="form" className="form">
+
+      {/* <Box component="form" className="form">
         <TextField label="Nombre" required fullWidth variant="filled" />
         <TextField
           label="Teléfono de contacto"
@@ -60,7 +86,7 @@ export const ContactoCelu = () => {
         >
           Borrar
         </Button>
-      </Box>
+      </Box> */}
     </div>
   );
 };

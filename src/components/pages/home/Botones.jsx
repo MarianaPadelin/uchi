@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import "./Botones.css"
-import { Button } from "@mui/material";
+
 
 
 const images = [
@@ -47,9 +47,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     "& .MuiImageMarked-root": {
       opacity: 0,
     },
-    "& .MuiTypography-root": {
-      border: "4px solid currentColor",
-    },
+ 
   },
 }));
 
@@ -73,6 +71,7 @@ const Image = styled("span")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  textAlign:"center",
   color: theme.palette.common.white,
 }));
 
@@ -142,9 +141,9 @@ export default function ButtonBaseDemo() {
         ))}
       </Box>
       <div style={{ display: "flex", justifyContent: "center", marginTop:"68px", marginBottom:"68px" }}>
-        <Button className="botonera" variant="contained" href="/productos">
-          Ver todos
-        </Button>
+        <button className="botonera"  href="/productos">
+          VER TODOS
+        </button>
       </div>
     </div>
   );

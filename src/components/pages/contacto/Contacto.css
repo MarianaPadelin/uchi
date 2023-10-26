@@ -1,19 +1,37 @@
 .contacto{
     background-color: #f4f4f4;
     min-height: 100vh;
-    color: #a2988e;
-    margin-top: 1vh;
+    color: #3a3a3a;
     display: flex;
+
+}
+.mediosContacto{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
 
 }
 
 
+.redesContacto{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+/* 
 .titulosContacto {
   display: flex;
   flex-direction: column;
   margin:3%;
-}
+} */
 
 .form {
   margin:3%;
+}
+
+@media only screen and (max-width: 600px){
+.redesContacto{
+  margin-bottom: 218px;
+}
 }

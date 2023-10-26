@@ -11,11 +11,11 @@ export const Productos = ({ items }) => {
   return (
     <div className="productos">
       <div className="titulos">
-        <h1>Nuestros productos</h1>
+        <h1 className="tituloParrafo">Nuestros productos</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum
-          curabitur vitae nunc sed velit dignissim.
+          Confeccionamos nuestros productos de manera artesanal con materias
+          primas naturales de origen local. Nos apasiona el diseño, el uso de
+          productos naturales y la perdurabilidad de las piezas.
         </p>
       </div>
 
@@ -51,9 +51,8 @@ export const Productos = ({ items }) => {
                     opacity: "100%",
                     borderRadius: "20px",
                     fontSize: "20px",
-                    
+                    color: "#3a3a3a",
                   }}
-                 
                   label={title}
                 />
               }
@@ -64,7 +63,7 @@ export const Productos = ({ items }) => {
                       backgroundColor: "#f6f6f4",
                       opacity: "70%",
                       borderRadius: "20px",
-                      marginRight: "4px",
+                      marginRight: "16px",
                       fontSize: "18px",
                       textDecoration: "underline",
                     }}

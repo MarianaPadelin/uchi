@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { productos } from "../../../routes/productos.js";
-import { informacion } from "../../../routes/informacion.js";
+
 import "./Navbar.css";
 
 function Navbarcompleto() {
@@ -40,13 +40,8 @@ function Navbarcompleto() {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/about">Sobre UCHI</Nav.Link>
-                <NavDropdown title="Información útil" id="basic-nav-dropdown">
-                  {informacion.map(({ id, title, path }) => (
-                    <NavDropdown.Item key={id} href={path}>
-                      {title}
-                    </NavDropdown.Item>
-                  ))}
-                </NavDropdown>
+                <Nav.Link href="/info">Información útil</Nav.Link>
+                
                 <Nav.Link href="/contacto">Contacto</Nav.Link>
               </Nav>
             </Navbar.Collapse>

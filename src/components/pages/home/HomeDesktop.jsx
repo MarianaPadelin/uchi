@@ -7,15 +7,15 @@ export const HomeDesktop = () => {
   const imagenes = [
     {
       id: "img1",
-      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696516385/uchi/inicio/Test-web_1024x722-opacidad_50_axhj9m.png",
+      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698324347/uchi/inicio/1440x924-Home_WEB_2_jq4z12.jpg",
     },
     {
       id: "img2",
-      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696516385/uchi/inicio/Test-web_1024x722-opacidad_50_axhj9m.png",
+      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698324345/uchi/inicio/1440x924-Home_WEB_3_c3gurs.jpg",
     },
     {
       id: "img3",
-      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696516385/uchi/inicio/Test-web_1024x722-opacidad_50_axhj9m.png",
+      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698324343/uchi/inicio/1440x924-Home_WEB_1_glyfek.jpg",
     },
   ];
   return (
@@ -23,14 +23,15 @@ export const HomeDesktop = () => {
       <Carousel>
         {imagenes.map(({ id, url }) => (
           <Carousel.Item key={id}>
-              <img
-                src={url}
-              ></img>
-           
-            <Carousel.Caption>
-              <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696427102/uchi/02-Logo_Horiz_Mediano_Positivo_i2xbz7.png"></img>
-              <h3 style={{ color: "#3a3a3a" }}>Slogan</h3>
+            <img
+              style={{ opacity: "70%", height: "747px", width: "1560px" }}
+              src={url}
+            ></img>
 
+            <Carousel.Caption>
+              <h3 style={{ color: "#3a3a3a", fontSize: "30px" }}>
+                <b>Tradición japonesa, fabricación local</b>
+              </h3>
               <a
                 style={{ textDecoration: "none", color: "inherit" }}
                 href="#botonera"

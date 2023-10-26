@@ -8,7 +8,7 @@ export const Detalle = ({ seleccionado }) => {
   return (
     <div className="detalle">
       <div className="titulos">
-        <h1>{seleccionado.title}</h1>
+        <h1 className="tituloParrafo">{seleccionado.title}</h1>
         <p>{seleccionado.descripcion}</p>
       </div>
       <div className="link1">
@@ -53,24 +53,24 @@ export const Detalle = ({ seleccionado }) => {
       </Button>
 
       {seleccionado.video1 && (
-        <iframe
-          width="300"
-          height="200"
-          style={{margin:"10px"}}
-          src={seleccionado.video1}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        ></iframe>
-      )}
-      {seleccionado.video2 && (
-        <iframe
+        <div className="videos">
+          <iframe
+            width="300"
+            height="200"
+            src={seleccionado.video1}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
           width="300"
           height="200"
           src={seleccionado.video2}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
+        </div>
       )}
+
     </div>
   );
 };

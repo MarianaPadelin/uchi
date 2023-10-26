@@ -1,8 +1,7 @@
 .about{
     background-color: #f4f4f4;
     min-height: 30vh;
-    color: #a2988e;
-    margin-top: 1vh;
+    color: #3a3a3a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +13,14 @@
     display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 218px;
+  margin-right: 218px;
 }
 
-
+.divDeBotones{
+  display: flex;
+  gap:20px;
+}
 .aboutCelu{
   display: flex;
   flex-direction: column;

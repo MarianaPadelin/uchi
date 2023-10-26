@@ -1,21 +1,23 @@
 .homeServicios {
-  background-color: #c0bbb6;
+  background-color: #f6f7f4;
   min-height: 30vh;
-  color: black;
+  color: #3a3a3a;
   margin-top: 2vh;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 35%;
+  padding-right: 35%;
   padding-top:4vh;
   padding-bottom: 4vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 h5{
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 @media only screen and (max-width: 600px){
