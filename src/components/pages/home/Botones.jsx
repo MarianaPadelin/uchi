@@ -110,7 +110,7 @@ export default function ButtonBaseDemo() {
               width: width,
               marginLeft: "12px",
               marginRight: "12px",
-              marginBottom:"12px",
+              marginBottom: "12px",
               display: "flex",
               justifyContent: "center",
               borderRadius: "20px",
@@ -140,8 +140,15 @@ export default function ButtonBaseDemo() {
           </ImageButton>
         ))}
       </Box>
-      <div style={{ display: "flex", justifyContent: "center", marginTop:"68px", marginBottom:"68px" }}>
-        <button className="botonera"  href="/productos">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "68px",
+          marginBottom: "68px",
+        }}
+      >
+        <button className="botonera" href="/productos">
           VER TODOS
         </button>
       </div>

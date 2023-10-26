@@ -4,7 +4,7 @@ import { Servicios } from "./Servicios"
 
 const HomeContainer = () => {
   return (
-    <div style={{ backgroundColor: "#f4f4f4" }}>
+    <div>
       <Home />
       <ButtonBaseDemo />
       <Servicios />
