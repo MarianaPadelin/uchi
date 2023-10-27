@@ -13,5 +13,15 @@
   justify-content: center;
   margin-left: 10vw;
   margin-right: 10vw;
+  align-items: baseline;
+}
+
+.servicio{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  height:fit-content;
 }
 

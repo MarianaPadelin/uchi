@@ -7,15 +7,19 @@ export const HomeDesktop = () => {
   const imagenes = [
     {
       id: "img1",
-      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698324347/uchi/inicio/1440x924-Home_WEB_2_jq4z12.jpg",
+      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698412856/uchi/inicio/1440x747-Home_WEB_1_e5gvrd.jpg",
     },
     {
       id: "img2",
-      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698324345/uchi/inicio/1440x924-Home_WEB_3_c3gurs.jpg",
+      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698412853/uchi/inicio/1440x747-Home_WEB_2_kjvbhf.jpg",
     },
     {
       id: "img3",
-      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698324343/uchi/inicio/1440x924-Home_WEB_1_glyfek.jpg",
+      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698412851/uchi/inicio/1440x747-Home_WEB_3_tsm7xb.jpg",
+    },
+    {
+      id: "img4",
+      url: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698412849/uchi/inicio/1440x747-Home_WEB_5_lrjzhq.jpg",
     },
   ];
   return (

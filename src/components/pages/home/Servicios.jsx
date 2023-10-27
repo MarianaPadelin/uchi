@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./Servicios.css"
 
 export const Servicios = () => {
@@ -9,9 +10,11 @@ export const Servicios = () => {
         Ofrecemos servicios de packaging, vajilla, iluminación, interiorismo,
         piezas de madera y nudos japoneses
       </p>
-      <button className="botonera2" href="/servicios">
-        VER MÁS
-      </button>
+      <Link style={{ textDecoration: "none" }} to="/servicios">
+        <button className="botonera2" href="/servicios">
+          VER MÁS
+        </button>
+      </Link>
     </div>
   );
 }

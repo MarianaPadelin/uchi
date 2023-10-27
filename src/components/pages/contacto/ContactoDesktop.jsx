@@ -1,6 +1,5 @@
 // import { Box, Button, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
-import EmailIcon from "@mui/icons-material/Email";
 
 export const ContactoDesktop = () => {
   return (
@@ -51,15 +50,18 @@ export const ContactoDesktop = () => {
         </p>
 
         <span className="mediosContacto">
-          +54 0000 0000
-          <EmailIcon fontSize="small" /> hola@uchi.com.ar
+          <p>+54 0000 0000</p>
+          <p>hola@uchi.com.ar</p>
+
           <Link
             style={{ color: "inherit", textDecoration: "none" }}
             to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
             target="_blank"
           >
-            <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319402/uchi/iconos/ph_whatsapp-logo-thin_ahnkdg.png" />
-            Whatsapp
+            <p>
+              <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319402/uchi/iconos/ph_whatsapp-logo-thin_ahnkdg.png" />
+              Whatsapp
+            </p>
           </Link>
         </span>
         <div className="redesContacto">

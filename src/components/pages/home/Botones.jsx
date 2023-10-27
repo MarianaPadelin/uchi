@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import "./Botones.css"
+import { Link } from "react-router-dom";
 
 
 
@@ -148,9 +149,11 @@ export default function ButtonBaseDemo() {
           marginBottom: "68px",
         }}
       >
-        <button className="botonera" href="/productos">
-          VER TODOS
-        </button>
+        <Link style={{textDecoration:"none"}} to="/productos">
+          <button className="botonera" href="/productos">
+            VER TODOS
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ export const ServiciosCelular = () => {
         cols={3}
         gap={10}
       >
-        {servicios.map(({ id, title, descripcion, boton }) => (
+        {servicios.map(({ id, title, descripcion, boton, icono }) => (
           <ImageListItem
             style={{
               display: "flex",
@@ -45,7 +45,7 @@ export const ServiciosCelular = () => {
             key={id}
           >
             <img
-              src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696603802/uchi/icono_generico_ezfvml.png"
+              src={icono}
               // src={`${icono}?w=164&h=164&fit=crop&auto=format`}
               alt={title}
               loading="lazy"

@@ -1,4 +1,6 @@
-import "./Info.css"
+
+import { Link } from "react-router-dom";
+import "./Info.css";
 
 export const Info = () => {
   return (
@@ -17,9 +19,13 @@ export const Info = () => {
           Visitá nuestra tienda online para realizar tu pedido y adquirir
           nuestros productos
         </p>
-        <button href="https://www.uchi.com.ar/" className="botonera">
-          Nuestra tienda online
-        </button>
+        <Link
+          style={{ textDecoration: "none" }}
+          to="https://www.uchi.com.ar/"
+          target="_blank"
+        >
+          <button className="botonera">Nuestra tienda online</button>
+        </Link>
       </div>
 
       <div className="parrafoInfo">
@@ -74,4 +80,4 @@ export const Info = () => {
       </div>
     </div>
   );
-}
+};

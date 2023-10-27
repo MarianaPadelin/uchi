@@ -23,22 +23,14 @@ export const ServiciosDesktop = () => {
       </div>
 
       <ImageList className="listadoServicios" cols={3} gap={10}>
-        {servicios.map(({ id, title, descripcion, boton }) => (
-          <ImageListItem
-            style={{
-              display: "flex",
-              alignItems: "center",
-              flexWrap: "wrap",
-              marginBottom: "4vh",
-            }}
-            key={id}
-          >
+        {servicios.map(({ id, title, descripcion, boton, icono }) => (
+          <ImageListItem className="servicio" key={id}>
             <img
-              src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696603802/uchi/icono_generico_ezfvml.png"
+              src={icono}
               // src={`${icono}?w=164&h=164&fit=crop&auto=format`}
               alt={title}
               loading="lazy"
-              style={{ borderRadius: "3vw", width: "40%", height: "100px" }}
+              style={{width: "40%"}}
             />
             <h3>{title}</h3>
             <h5>{descripcion}</h5>
