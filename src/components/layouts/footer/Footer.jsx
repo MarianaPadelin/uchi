@@ -23,9 +23,7 @@ const Footer = () => {
                 Whatsapp
               </Link>
             </p>
-            <p>
-              hola@uchi.com.ar
-            </p>
+            <p>hola@uchi.com.ar</p>
             <p>+54 0000 0000</p>
           </div>
         </div>
@@ -34,14 +32,14 @@ const Footer = () => {
           <h4 className="soloTitulo">Seguinos en</h4>
           <div className="subRedes">
             <Link
-              style={{ color: "inherit" }}
+              style={{ color: "inherit", marginRight: "10px" }}
               to="https://www.youtube.com/channel/UCZyzYTcjeYO-M1M48_XiM2Q"
               target="_blank"
             >
               <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319397/uchi/iconos/youtube_qrzg9k.png" />
             </Link>
             <Link
-              style={{ color: "inherit" }}
+              style={{ color: "inherit", marginRight: "10px" }}
               to="https://www.instagram.com/uchi__ar/"
               target="_blank"
             >

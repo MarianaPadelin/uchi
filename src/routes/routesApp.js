@@ -4,7 +4,7 @@ import { DetalleContainer } from "../components/pages/detalle/DetalleContainer";
 // import { Detalle } from "../components/pages/detalle/Detalle";
 import HomeContainer from "../components/pages/home/HomeContainer";
 import { InfoContainer } from "../components/pages/info/InfoContainer";
-import { InteriorismoContainer } from "../components/pages/interiorismo/InteriorismoContainer";
+import { ServicioIndividualContainer } from "../components/pages/servicioIndividual/ServicioIndividualContainer";
 import { ProductosContainer } from "../components/pages/productos/ProductosContainer";
 import { ServiciosContainer } from "../components/pages/servicios/ServiciosContainer";
 
@@ -51,7 +51,7 @@ export const routesApp = [
   },
   {
     id: "interiorismo",
-    path: "/servicios/interiorismo",
-    Element: InteriorismoContainer,
+    path: "/servicios/:id",
+    Element: ServicioIndividualContainer,
   },
 ];

@@ -22,23 +22,25 @@ export const ServiciosDesktop = () => {
         </Link>
       </div>
 
-      <ImageList className="listadoServicios" cols={3} gap={10}>
-        {servicios.map(({ id, title, descripcion, boton, icono }) => (
-          <ImageListItem className="servicio" key={id}>
-            <img
-              src={icono}
-              // src={`${icono}?w=164&h=164&fit=crop&auto=format`}
-              alt={title}
-              loading="lazy"
-              style={{width: "40%"}}
-            />
-            <h3>{title}</h3>
-            <h5>{descripcion}</h5>
-            <Link className="link" to="/servicios/interiorismo">
-              {boton}
-            </Link>
-          </ImageListItem>
-        ))}
+      <ImageList className="listadoServicios" cols={3} gap={70}>
+        {servicios.map(
+          ({ id, title, icono, height, width,path }) => (
+            <ImageListItem className="servicio" key={id}>
+              <img
+                src={icono}
+                // src={`${icono}?w=164&h=164&fit=crop&auto=format`}
+                alt={title}
+                loading="lazy"
+                style={{ width: `${width}px`, height: `${height}px`, marginBottom:"40px" }}
+              />
+              <h3>{title}</h3>
+  
+              <Link className="link" to={path}>
+                Ver más
+              </Link>
+            </ImageListItem>
+          )
+        )}
       </ImageList>
       <h1></h1>
     </div>

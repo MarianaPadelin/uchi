@@ -62,19 +62,26 @@
   flex-direction: column;
   margin-left: 734px;
   margin-top: 128px;
+  margin-bottom: 128px;
   margin-right: 219px;
   color:black;
 }
 
 .tituloParrafo{
   font-size: 45px;
-  padding-bottom: 48px;
+  padding-bottom: 40px;
+  margin-bottom: 0;
 }
 
 
 .titulo2{
   font-size: 35px;
   padding-bottom: 48px;
+}
+
+.titulo3{
+    font-size: 35px;
+  padding-bottom: 8px;
 }
 p {
   font-size: 20px;
