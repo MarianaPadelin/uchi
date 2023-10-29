@@ -22,16 +22,21 @@ export const HomeCelular = () => {
   ];
   return (
     <div className="home">
-      <Carousel indicators={false}>
+      <Carousel indicators={false} touch={true}>
         {imagenesVerticales.map(({ id, url }) => (
           <Carousel.Item key={id}>
-            <img width="100%" style={{opacity:"70%"}} src={url}></img>
-            <CarouselCaption>
+            <img width="100%" style={{ opacity: "70%" }} src={url}></img>
+            <CarouselCaption className="textoCarrusel">
+              <div className="texto1">
+                <h3 className="titulo3" style={{marginLeft:"0px", fontSize:"30px"}}>
+                  Tradición japonesa, fabricación local
+                </h3>
+              </div>
               <a
-                style={{ textDecoration: "none", color: "inherit" }}
+                style={{ textDecoration: "none", color: "#3a3a3a" }}
                 href="#botonera"
               >
-                <h3 id="autoscroll" style={{ color: "#3a3a3a" }}>
+                <h3 id="autoscroll" className="texto2">
                   <b>Descubre nuestros productos</b>
                 </h3>
 
@@ -43,14 +48,6 @@ export const HomeCelular = () => {
             </CarouselCaption>
           </Carousel.Item>
         ))}
-
-
-          <div className="textoCarrusel">
-            <h3 style={{ color: "#3a3a3a", fontSize: "30px" }}>
-              Tradición japonesa, fabricación local
-            </h3>
-          </div>
-
       </Carousel>
     </div>
   );

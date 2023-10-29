@@ -3,7 +3,7 @@ export const AboutCelular = () => {
     <div className="aboutCelu">
       <img
         className="imagenesCelu"
-        src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696936336/uchi/about/IMG_1088_jpg_ai8zfh.jpg"
+        src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698606900/uchi/about/M_Sobre_Uchi-2_vcnwa7.jpg"
       ></img>
 
       <div className="aboutDetalle">
@@ -17,6 +17,10 @@ export const AboutCelular = () => {
           la importancia de rodearnos de objetos de fabricación local que
           manifiesten su belleza en su esencia natural.
         </p>
+        <img
+          className="imagenesCelu"
+          src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698606904/uchi/about/M_Sobre_Uchi-1_opoj89.jpg"
+        ></img>
         <p>
           “Detrás de cada objeto hay un cierto clima, un cierto rango de
           temperaturas, una calidad de suelo determinada y otras muchas
@@ -30,31 +34,33 @@ export const AboutCelular = () => {
           artesano.
         </p>
       </div>
+
       <img
         className="imagenesCelu"
-        src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696936334/uchi/about/IMG_5815_jpg_mvavfw.jpg"
+        src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698606899/uchi/about/M_Sobre_Uchi-3_zrntp1.jpg"
       ></img>
-      <img
-        className="imagenesCelu"
-        src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696936333/uchi/about/IMG_5861_jpg_pazkkw.jpg"
-      ></img>
-      <h1 className="titulo2">Sobre Alejandra Hanashiro</h1>
-      <p>
-        Nací en Okinawa, Japón, pero me crie en Argentina, país donde me mudé
-        cuando tenía un año. Soy diseñadora industrial egresada de la Facultad
-        de Diseño y Urbanismo de la Universidad de Buenos Aires. Volví a Japón a
-        estudiar en dos oportunidades. En 2015 dediqué mi estadía a aprender el
-        arte popular de Okinawa. En 2019 con una beca JICA (Japan International
-        Cooperation Agency), viajé a Kyoto para aprender distintas técnicas
-        artesanales y tradicionales con el fin de aplicarlas en el diseño desde
-        el diseño de productos. Actualmente formo parte del equipo de Patricia
-        Lacano, en el cual nos dedicamos a desarrollar mobiliario, iluminación e
-        interiorismo tanto para viviendas como para espacios semipúblicos. Me
-        interesan los oficios y la exploración de los materiales naturales, ya
-        que me gusta la manera en que cambian evidenciando su uso y el paso del
-        tiempo. Desde UCHI mi intención es dar a conocer la cultura japonesa a
-        través de objetos de uso cotidiano y utilitarios.
-      </p>
+
+      <div className="aboutDetalle">
+        <h1 className="titulo2">Sobre Alejandra Hanashiro</h1>
+        <p>
+          Nací en Okinawa, Japón, pero me crie en Argentina, país donde me mudé
+          cuando tenía un año. Soy diseñadora industrial egresada de la Facultad
+          de Diseño y Urbanismo de la Universidad de Buenos Aires. Volví a Japón
+          a estudiar en dos oportunidades. En 2015 dediqué mi estadía a aprender
+          el arte popular de Okinawa. En 2019 con una beca JICA (Japan
+          International Cooperation Agency), viajé a Kyoto para aprender
+          distintas técnicas artesanales y tradicionales con el fin de
+          aplicarlas en el diseño desde el diseño de productos. Actualmente
+          formo parte del equipo de Patricia Lacano, en el cual nos dedicamos a
+          desarrollar mobiliario, iluminación e interiorismo tanto para
+          viviendas como para espacios semipúblicos. Me interesan los oficios y
+          la exploración de los materiales naturales, ya que me gusta la manera
+          en que cambian evidenciando su uso y el paso del tiempo. Desde UCHI mi
+          intención es dar a conocer la cultura japonesa a través de objetos de
+          uso cotidiano y utilitarios.
+        </p>
+      </div>
+
       <div className="divDeBotones">
         <button className="botonera">Ver mi currículum</button>
         <button className="botonera2">Ver mi portfolio</button>

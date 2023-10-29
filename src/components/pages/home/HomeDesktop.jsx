@@ -1,7 +1,6 @@
 import { Carousel } from "react-bootstrap";
 
 
-
 export const HomeDesktop = () => {
   const imagenes = [
     {
@@ -31,23 +30,24 @@ export const HomeDesktop = () => {
               src={url}
             ></img>
 
-            <Carousel.Caption>
-              <h3 style={{ color: "#3a3a3a", fontSize: "30px" }}>
-                <b>Tradición japonesa, fabricación local</b>
-              </h3>
-              <a
-                style={{ textDecoration: "none", color: "inherit" }}
-                href="#botonera"
-              >
-                <h3 id="autoscroll" style={{ color: "#3a3a3a" }}>
-                  <b>Descubre nuestros productos</b>
+            <Carousel.Caption className="textoCarrusel">
+              <div className="texto1">
+                <h3 className="titulo3">
+                  Tradición japonesa, fabricación local
                 </h3>
+              </div>
+              <div>
+                <a className="texto2" href="#botonera">
+                  <h3 id="autoscroll">
+                    <b>Descubre nuestros productos</b>
+                  </h3>
 
-                <img
-                  src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698414308/uchi/iconos/arrow-down-circle_cqkmai.png"
-                  width={35}
-                />
-              </a>
+                  <img
+                    src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698414308/uchi/iconos/arrow-down-circle_cqkmai.png"
+                    width={35}
+                  />
+                </a>
+              </div>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

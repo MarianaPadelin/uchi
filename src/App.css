@@ -5,6 +5,7 @@
 
 .botonera {
   background-color: #719c7e !important;
+  width: auto;
   min-width: 134px;
   height: 48px;
   padding: 20px;
