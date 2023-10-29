@@ -45,6 +45,7 @@
     align-items: flex-start;
     gap: 0px;
     font-size: 18px !important;
+ 
   }
   .mediosDeContacto {
     display: flex;
@@ -54,5 +55,12 @@
 
   .redes{
     padding-bottom: 2px;
+  }
+  .soloTitulo{
+    margin-bottom: 8px;
+  }
+  .parrafoFooter{
+    margin-bottom: 8px!important;
+
   }
 }

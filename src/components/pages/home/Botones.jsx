@@ -2,10 +2,8 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
-import "./Botones.css"
+import "./Botones.css";
 import { Link } from "react-router-dom";
-
-
 
 const images = [
   {
@@ -37,8 +35,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     width: "100% !important", // Overrides inline-style
-    height: "318px",    
-
+    height: "318px",
   },
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
@@ -48,7 +45,6 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     "& .MuiImageMarked-root": {
       opacity: 0,
     },
- 
   },
 }));
 
@@ -72,7 +68,7 @@ const Image = styled("span")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  textAlign:"center",
+  textAlign: "center",
   color: theme.palette.common.white,
 }));
 
@@ -109,9 +105,9 @@ export default function ButtonBaseDemo() {
             key={id}
             style={{
               width: width,
-              marginLeft: "12px",
-              marginRight: "12px",
-              marginBottom: "12px",
+              marginLeft: "20px",
+              marginRight: "20px",
+              marginBottom: "40px",
               display: "flex",
               justifyContent: "center",
               borderRadius: "20px",
@@ -141,15 +137,8 @@ export default function ButtonBaseDemo() {
           </ImageButton>
         ))}
       </Box>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "68px",
-          marginBottom: "68px",
-        }}
-      >
-        <Link style={{textDecoration:"none"}} to="/productos">
+      <div className="divAbajo">
+        <Link style={{ textDecoration: "none" }} to="/productos">
           <button className="botonera" href="/productos">
             VER TODOS
           </button>

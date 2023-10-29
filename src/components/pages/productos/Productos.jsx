@@ -78,6 +78,9 @@ export const Productos = ({ items }) => {
       <Link className="link" to="/productos">
         Ver todos
       </Link>
+      <a href="#top" style={{textDecoration:"none"}}>
+        <button className="botonera2">Volver arriba</button>
+      </a>
     </div>
   );
 };

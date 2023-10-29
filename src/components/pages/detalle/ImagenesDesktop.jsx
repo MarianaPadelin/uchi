@@ -58,13 +58,13 @@ export const ImagenesDesktop = ({ seleccionado }) => {
         <h2 className="titulo3">Datos del producto</h2>
         <span style={{ display: "flex", gap: "40px" }}>
           <p>{seleccionado.medidas}</p>
-          <button
-            href={seleccionado.enlace}
-            className="botonera"
+          <Link
+            to={seleccionado.enlace}
             target="_blank"
+            style={{ textDecoration: "none" }}
           >
-            Comprar
-          </button>
+            <button className="botonera">Comprar</button>
+          </Link>
         </span>
       </div>
 
@@ -82,7 +82,7 @@ export const ImagenesDesktop = ({ seleccionado }) => {
         </ul>
       </div>
       <Link
-        style={{ marginBottom: "128px", textDecoration:"none" }}
+        style={{ marginBottom: "128px", textDecoration: "none" }}
         to={`/productos/${seleccionado.categoria}`}
       >
         <button className="botonera2">Ver más {seleccionado.categoria}</button>

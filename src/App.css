@@ -24,6 +24,7 @@
 
 .botonera2 {
   background-color: #f6f7f4 !important;
+  width: auto;
   min-width: 120px;
   max-width: fit-content;
   height: 48px;
@@ -55,6 +56,7 @@
   margin-right: 80%;
   margin-bottom: 10vh;
   font-size: 18px;
+  color:#333333;
 }
 
 .titulos {
@@ -92,12 +94,32 @@ p {
   .titulos{
     display:flex;
     justify-content: center;
-    margin:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom:0px;
+    margin-top:0px;
   }
   .link1 {
     display: flex;
     margin-left: 5%;
     flex-wrap: nowrap;
     margin-right: 60%;
+    font-size: 16px;
+  }
+
+  .tituloParrafo{
+    font-size: 35px;
+    padding-bottom: 40px;
+  margin-top: 120px;
+  }
+  .titulo2{
+  font-size: 28px;
+  padding-bottom: 24px;
+  margin-bottom: 0px;
+
+}
+
+  p{
+    font-size:18px;
   }
 }

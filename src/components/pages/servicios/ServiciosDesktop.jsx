@@ -16,11 +16,7 @@ export const ServiciosDesktop = () => {
           el mensaje o idea que se quiere transmitir.
         </p>
       </div>
-      <div className="link1">
-        <Link style={{ color: "black" }} to="/productos">
-          Volver a la colección
-        </Link>
-      </div>
+      
 
       <ImageList className="listadoServicios" cols={3} gap={70}>
         {servicios.map(
@@ -28,7 +24,6 @@ export const ServiciosDesktop = () => {
             <ImageListItem className="servicio" key={id}>
               <img
                 src={icono}
-                // src={`${icono}?w=164&h=164&fit=crop&auto=format`}
                 alt={title}
                 loading="lazy"
                 style={{ width: `${width}px`, height: `${height}px`, marginBottom:"40px" }}
@@ -42,7 +37,7 @@ export const ServiciosDesktop = () => {
           )
         )}
       </ImageList>
-      <h1></h1>
+
     </div>
   );
 };

@@ -3,36 +3,51 @@ import { Link } from "react-router-dom";
 export const ImagenesCelular = ({ seleccionado }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <div
+      <Link
         className="link1"
-        style={{ marginLeft: "48px", marginTop: "98px", marginBottom: "0px" }}
+        style={{
+          marginTop: "40px",
+          justifyContent: "end",
+          marginRight: "20px",
+          marginBottom:"0px"
+        }}
+        to="/productos"
       >
-        <Link style={{ color: "black" }} to="/productos">
-          Volver a la colección
-        </Link>
-      </div>
-      <div className="titulos" style={{ marginTop: "0" }}>
-        <h1 className="tituloParrafo">{seleccionado.title}</h1>
-        <p>{seleccionado.descripcion}</p>
-      </div>
-      <img className="imagenesCelu" src={seleccionado.img1}></img>
-      <img className="imagenesCelu" src={seleccionado.img2}></img>
-      <img className="imagenesCelu" src={seleccionado.img3}></img>
+        Volver a la colección
+      </Link>
 
       <div className="titulos">
+        <h1 className="tituloParrafo" style={{marginTop:"80px"}}>{seleccionado.title}</h1>
+        <p>{seleccionado.descripcion}</p>
+      </div>
+      <img className="imagenesCelu" src={seleccionado.img2}></img>
+      <img className="imagenesCelu" src={seleccionado.img1}></img>
+
+      <div className="titulos" style={{ marginTop: "0px" }}>
         <p>{seleccionado.especificaciones}</p>
       </div>
       <div className="titulos">
-        <h2>Datos del producto</h2>
-        <p>{seleccionado.medidas}</p>
+        <h2 className="titulo3">Datos del producto</h2>
+        <p style={{fontSize:"16px"}}>{seleccionado.medidas}</p>
 
-        <button href={seleccionado.enlace} className="botonera" target="_blank">
-          Comprar
-        </button>
+        <Link
+          to={seleccionado.enlace}
+          target="_blank"
+          style={{
+            textDecoration: "none",
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "40px",
+          }}
+        >
+          <button className="botonera">Comprar</button>
+        </Link>
       </div>
 
+      <img className="imagenesCelu" src={seleccionado.img3}></img>
+
       <div className="cuidados">
-        <h2 className="tituloParrafo">Cuidados del producto</h2>
+        <h2 className="titulo2">Cuidados del producto</h2>
         <ul>
           {seleccionado.li1 && <li>{seleccionado.li1}</li>}
           {seleccionado.li2 && <li>{seleccionado.li2}</li>}
@@ -44,12 +59,18 @@ export const ImagenesCelular = ({ seleccionado }) => {
           {seleccionado.li8 && <li>{seleccionado.li8}</li>}
         </ul>
       </div>
-      <button
-        className="botonera2"
-        href={`/productos/${seleccionado.categoria}`}
+
+      <Link
+        to={`/productos/${seleccionado.categoria}`}
+        style={{
+          textDecoration: "none",
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "40px",
+        }}
       >
-        Ver más {seleccionado.categoria}
-      </button>
+        <button className="botonera2">Ver más {seleccionado.categoria}</button>
+      </Link>
 
       {seleccionado.video1 && (
         <div className="videos">

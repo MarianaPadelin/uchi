@@ -11,7 +11,7 @@ export const productosCompletos = [
     especificaciones:
       "Producto coloreado con óxidos, horneado a una temperatura de 1350°C con el fin de lograr una gran compresión de sus partículas. No requiere de esmalte para impermeabilizar.",
     medidas:
-      "Diámetro 12 cm x 5.5 cm de altura.Incluye un pisón torneado en madera que no daña las estrías del suribachi. Caja 14 x 14 x 7 cm.",
+      "Diámetro 12 cm x 5.5 cm de altura. Incluye un pisón torneado en madera que no daña las estrías del suribachi. Caja 14 x 14 x 7 cm.",
     li1: "Lavar inmediatamente luego de ser utilizado con especias pigmentadas como la cúrcuma.",
     li2: "Evitar el uso de esponjas metálicas.",
     li3: " Si el producto se encuentra reseco, humectar con un paño embebido en aceite de cocina.",
@@ -33,7 +33,7 @@ export const productosCompletos = [
     especificaciones:
       "Producido en porcelana blanca. Horneado a una temperatura de 1350°C con el fin de lograr una gran compresión de sus partículas. No requiere de esmalte para impermeabilizar.",
     medidas:
-      "Diámetro 12 cm x 5.5 cm de altura.Incluye un pisón torneado en madera que no daña las estrías del suribachi. Caja 14 x 14 x 7 cm.",
+      "Diámetro 12 cm x 5.5 cm de altura. Incluye un pisón torneado en madera que no daña las estrías del suribachi. Caja 14 x 14 x 7 cm.",
 
     li1: "Lavar inmediatamente luego de ser utilizado con especias pigmentadas como la cúrcuma.",
     li2: "En caso de notar manchas dejar en remojo por unas horas en lavandina (porcentaje indicado en la etiqueta del producto).",
@@ -57,7 +57,7 @@ export const productosCompletos = [
     especificaciones:
       "Producto coloreado con óxidos, horneado a una temperatura de 1350°C con el fin de lograr una gran compresión de sus partículas.No requiere de esmalte para impermeabilizar.",
     medidas:
-      "Diámetro 12 cm x 5.5 cm de altura.Incluye un pisón torneado en madera que no daña las estrías del suribachi. Caja 14 x 14 x 7 cm.",
+      "Diámetro 12 cm x 5.5 cm de altura. Incluye un pisón torneado en madera que no daña las estrías del suribachi. Caja 14 x 14 x 7 cm.",
     li1: "Lavar inmediatamente luego de ser utilizado con especias pigmentadas como la cúrcuma.",
     li2: "Evitar el uso de esponjas metálicas.",
     li3: " Si el producto se encuentra reseco, humectar con un paño embebido en aceite de cocina.",
@@ -71,9 +71,9 @@ export const productosCompletos = [
     id: "4",
     path: "/productos/chawan1",
     title: "Chawan Primavera",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697713463/uchi/Chawan1/Chawan-Primavera_l92z9g.jpg",
-    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865427/uchi/Chawan1/IMG_9537_jpg_wi1bun.jpg",
-    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865424/uchi/Chawan1/0_1_-05_copy_udvykj.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583259/uchi/Chawan1/Chawan_Primavera-1_kvly2a.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583255/uchi/Chawan1/Chawan_Primavera-2_jex0xt.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583253/uchi/Chawan1/Chawan_Primavera-3_tf8mcy.jpg",
     descripcion:
       "El chawan (茶碗) es una pieza central en la tradición de la ceremonia japonesa del té. Es una taza cuya morfología y tamaño permiten la utilización del chasen (batidor de bambú) en la preparación del matcha. La cultura japonesa tiene una profunda conexión con la naturaleza, representando en la elección del chawan la estrecha relación con el momento del año.A partir de la pasta cerámica, su forma y su esmalte buscan evidenciar la distinción entre cada estación del año y el sentimiento que se busca transmitir.",
     especificaciones:
@@ -88,9 +88,9 @@ export const productosCompletos = [
     id: "5",
     path: "/productos/chawan2",
     title: "Chawan Verano",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697713922/uchi/Chawan2/Chawan-Verano_kqw4bj.jpg",
-    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865484/uchi/Chawan2/IMG_1442_w2rb3u.jpg",
-    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865488/uchi/Chawan2/0_1_-07_copy_nxqhz3.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583424/uchi/Chawan2/Chawan_Verano-1_ofdb9r.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583423/uchi/Chawan2/Chawan_Verano-2_f9npno.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583422/uchi/Chawan2/Chawan_Verano-3_yzmyji.jpg",
     descripcion:
       "El chawan (茶碗) es una pieza central en la tradición de la ceremonia japonesa del té. Es una taza cuya morfología y tamaño permiten la utilización del chasen (batidor de bambú) en la preparación del matcha. La cultura japonesa tiene una profunda conexión con la naturaleza, representando en la elección del chawan la estrecha relación con el momento del año.A partir de la pasta cerámica, su forma y su esmalte buscan evidenciar la distinción entre cada estación del año y el sentimiento que se busca transmitir.",
     especificaciones:
@@ -105,9 +105,9 @@ export const productosCompletos = [
     id: "6",
     path: "/productos/chawan3",
     title: "Chawan Otoño",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697713958/uchi/Chawan3/Chawan-Oto%C3%B1o_bdqty5.jpg",
-    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865540/uchi/Chawan3/IMG_0281_z883vo.jpg",
-    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865537/uchi/Chawan3/0_1_-06_copy_qanvoq.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583529/uchi/Chawan3/Chawan_Oto%C3%B1o-1_ezjaac.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583526/uchi/Chawan3/Chawan_Oto%C3%B1o-2_xjwe2r.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583523/uchi/Chawan3/Chawan_Oto%C3%B1o-3_n6sy2n.jpg",
     descripcion:
       "El chawan (茶碗) es una pieza central en la tradición de la ceremonia japonesa del té. Es una taza cuya morfología y tamaño permiten la utilización del chasen (batidor de bambú) en la preparación del matcha. La cultura japonesa tiene una profunda conexión con la naturaleza, representando en la elección del chawan la estrecha relación con el momento del año.A partir de la pasta cerámica, su forma y su esmalte buscan evidenciar la distinción entre cada estación del año y el sentimiento que se busca transmitir.",
     especificaciones:
@@ -122,9 +122,9 @@ export const productosCompletos = [
     id: "7",
     path: "/productos/chawan4",
     title: "Chawan Invierno",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697713992/uchi/Chawan4/Chawan-Invierno_b4gfwp.jpg",
-    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865673/uchi/Chawan4/IMG_9528_dkl26x.jpg",
-    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865677/uchi/Chawan4/0_1_-08_copy_tu6ug9.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583645/uchi/Chawan4/Chawan_Invierno-1_n3r5hu.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583643/uchi/Chawan4/Chawan_Invierno-2_mmyyyx.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583642/uchi/Chawan4/Chawan_Invierno-3_ijdlmy.jpg",
     descripcion:
       "El chawan (茶碗) es una pieza central en la tradición de la ceremonia japonesa del té. Es una taza cuya morfología y tamaño permiten la utilización del chasen (batidor de bambú) en la preparación del matcha. La cultura japonesa tiene una profunda conexión con la naturaleza, representando en la elección del chawan la estrecha relación con el momento del año.A partir de la pasta cerámica, su forma y su esmalte buscan evidenciar la distinción entre cada estación del año y el sentimiento que se busca transmitir.",
     especificaciones:
@@ -139,9 +139,9 @@ export const productosCompletos = [
     id: "8",
     path: "/productos/hangiri1",
     title: "Hangiri",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697714143/uchi/Hangiri/Hangiri_dzsxx1.jpg",
-    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865792/uchi/Hangiri/Uso_01_1_qsyudp.jpg",
-    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696865797/uchi/Hangiri/Uso_02_ayusyn.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583760/uchi/Hangiri/Hangiri_1_p4vs9v.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583757/uchi/Hangiri/Hangiri_2_qhbegm.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583755/uchi/Hangiri/Hangiri_3_zhbtvo.jpg",
     descripcion:
       "El hangiri o sushi oke es un utensilio indispensable para lograr la textura adecuada del arroz de sushi. Su plano de base y baja profundidad favorecen el enfriamiento del arroz, logrando alcanzar la textura adecuada para el sushi, la madera natural trabaja absorbiendo la humedad excesiva del arroz mientras se integra con el vinagre (sushi-zu).",
     especificaciones:
@@ -165,12 +165,11 @@ export const productosCompletos = [
     id: "9",
     path: "/productos/surikogi",
     title: "Surikogi",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697714418/uchi/Accesorios/Surikogi_lswboy.jpg",
-    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696941705/uchi/Accesorios/IMG_6606_xwytaq.jpg",
-    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696941600/uchi/Accesorios/IMG_5515_qhvh6w.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583885/uchi/Accesorios/Surikogi_1_chahrb.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583879/uchi/Accesorios/Surikogi_2_t43rya.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698583876/uchi/Accesorios/Surikogi_3_ouevu4.jpg",
     descripcion:
-      "Mano o pisón de mortero torneado en madera, protegido con una mezcla de aceites minerales y cera de abejas.",
-    especificaciones: "Confeccionado en madera natural.",
+      "Mano o pisón de mortero torneado en madera, protegido con una mezcla de aceites minerales y cera de abejas.Confeccionado en madera natural.",
     medidas: "",
     li1: "Evitar dejarlo en remojo, ya que esto podría causar que el producto absorba líquidos y se deforme.",
     li2: "En caso de notarlo reseco humectar con un paño embebido en aceite de cocina.",
@@ -181,7 +180,7 @@ export const productosCompletos = [
     id: "10",
     path: "/productos/chasen",
     title: "Chasen",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697714564/uchi/Accesorios/Chasen_rmqync.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698584121/uchi/Accesorios/Chasen_1_itvjes.jpg",
     img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696941698/uchi/Accesorios/IMG_0269_drzgqm.jpg",
     img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696941620/uchi/Accesorios/IMG_1840_rw20dp.jpg",
     descripcion:
@@ -197,12 +196,12 @@ export const productosCompletos = [
     id: "11",
     path: "/productos/paños",
     title: "Fukin - Paño de algodón",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1697714758/uchi/Accesorios/Pa%C3%B1os_r9o7xw.jpg",
-    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696941695/uchi/Accesorios/IMG_5450_jpg_at47yt.jpg",
-    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1696941692/uchi/Accesorios/IMG_5447_jpg_bnmyyi.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698584269/uchi/Accesorios/Pa%C3%B1os_1_ugepxf.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698584266/uchi/Accesorios/Pa%C3%B1os_2_mjurws.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698584263/uchi/Accesorios/Pa%C3%B1os_3_bpwrki.jpg",
     descripcion:
-      "Paño 100% de algodón orgánico para cocina. Usualmente se utilizan dos: uno para cubrir el arroz de sushi evitando que se seque y otro para limpiar la tabla de corte.",
-    especificaciones: "Dobladillo a tono.",
+      "Paño 100% de algodón orgánico para cocina. Usualmente se utilizan dos: uno para cubrir el arroz de sushi evitando que se seque y otro para limpiar la tabla de corte. Dobladillo a tono.",
+    especificaciones: "",
     medidas: "40 x 40 cm. 230 gr",
     categoria: "accesorios",
     enlace: "https://www.uchi.com.ar/hangiri/pano-de-algodon-organico",

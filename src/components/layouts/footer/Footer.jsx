@@ -13,7 +13,7 @@ const Footer = () => {
             <h5 className="soloTitulo">Contacto </h5>
           </div>
           <div className="mediosDeContacto">
-            <p>
+            <p className="parrafoFooter">
               <Link
                 style={{ color: "inherit", textDecoration: "none" }}
                 to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
@@ -23,8 +23,8 @@ const Footer = () => {
                 Whatsapp
               </Link>
             </p>
-            <p>hola@uchi.com.ar</p>
-            <p>+54 0000 0000</p>
+            <p className="parrafoFooter">hola@uchi.com.ar</p>
+            <p className="parrafoFooter">+54 0000 0000</p>
           </div>
         </div>
 

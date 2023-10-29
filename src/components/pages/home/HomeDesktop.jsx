@@ -1,5 +1,4 @@
 import { Carousel } from "react-bootstrap";
-import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
 
 
 
@@ -24,7 +23,7 @@ export const HomeDesktop = () => {
   ];
   return (
     <div className="home">
-      <Carousel>
+      <Carousel indicators={false}>
         {imagenes.map(({ id, url }) => (
           <Carousel.Item key={id}>
             <img
@@ -41,12 +40,12 @@ export const HomeDesktop = () => {
                 href="#botonera"
               >
                 <h3 id="autoscroll" style={{ color: "#3a3a3a" }}>
-                  Descubre nuestros productos
+                  <b>Descubre nuestros productos</b>
                 </h3>
 
-                <ArrowCircleDownIcon
-                  fontSize="large"
-                  style={{ color: "#3a3a3a" }}
+                <img
+                  src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698414308/uchi/iconos/arrow-down-circle_cqkmai.png"
+                  width={35}
                 />
               </a>
             </Carousel.Caption>

@@ -55,7 +55,7 @@ export const servicios = [
       "Diseño y producción de objetos de todo tipo en madera maciza. Desde piezas únicas hasta pequeñas series de producción.",
 
     height: "131",
-    width: "120",
+    width: "130",
   },
   {
     id: "nudos",

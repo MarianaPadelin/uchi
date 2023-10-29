@@ -35,9 +35,11 @@
 
 
 .imagenesCelu{
-  width: 90vw;
-  border-radius: 2vw;
-  margin:1vh;
+
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 
 .imagenesDesktop{
@@ -55,11 +57,17 @@
 
 @media only screen and (max-width: 600px){
    .cuidados{
-    padding:0;
+    padding-left:20px;
+    padding-right: 20px;
    }
 
    .videos{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
    }
 }

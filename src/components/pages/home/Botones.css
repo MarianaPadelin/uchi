@@ -9,3 +9,30 @@
 
 }
 
+.botonInd{
+    width:"318px";
+    margin-left:12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+
+ 
+}
+
+.divAbajo{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .divAbajo{
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+}
+

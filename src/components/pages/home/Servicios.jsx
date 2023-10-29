@@ -11,7 +11,7 @@ export const Servicios = () => {
         piezas de madera y nudos japoneses
       </p>
       <Link style={{ textDecoration: "none" }} to="/servicios">
-        <button className="botonera2" href="/servicios">
+        <button className="botonera2">
           VER MÁS
         </button>
       </Link>
