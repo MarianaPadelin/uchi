@@ -13,7 +13,7 @@
 }
 
 .dropdown {
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .logoNavbar {
@@ -24,7 +24,7 @@
   padding: 0;
   display: flex;
   flex-wrap: nowrap;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .Container2 {
@@ -33,59 +33,27 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-  .Navbar {
-    padding: 0px !important;
-       margin-top:18px;
-    margin-bottom: 72px;
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-  
-  }
-  #root > nav > div{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  #root > div.navbarCompleto > nav{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+  .Container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 18px;
   }
 
   .me-auto{
     background-color: #cdd2c2;
+    color:#3a3a3a;
+    font-size: 35px;
+    height: 800px;
     gap:14px;
-    width: 400px;
     margin:0px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-  }
+  } 
 
-  /* #root > div:nth-child(1) > nav > div {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0;
+  .subRedes{
+    margin-top: 40px;
   }
-  #responsive-navbar-nav > div {
-    gap: 0px;
-  } */
-
-  .logoNavbar {
-    height: 56px;
-    margin-right: 0;
-  }
-
-  button {
-    width: 48px;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* .Container2 {
-    display: block;
-  } */
 }
+

@@ -1,46 +1,10 @@
 
+import { Box, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export const ContactoDesktop = () => {
+export const ContactoDesktop = ({ sendEmail, form }) => {
   return (
     <div className="contacto">
-      {/* <Box component="form" className="form">
-        <TextField label="Nombre" required fullWidth variant="filled" />
-        <TextField
-          label="Teléfono de contacto"
-          required
-          fullWidth
-          variant="filled"
-        />
-        <TextField
-          label="Mail de contacto"
-          required
-          fullWidth
-          variant="filled"
-        />
-        <TextField
-          fullWidth
-          multiline
-          rows={4}
-          placeholder="Escriba aquí su consulta"
-        />
-        <Button
-          style={{ backgroundColor: "#a2988e" }}
-          variant="contained"
-          type="submit"
-          value="send"
-        >
-          Enviar
-        </Button>
-        <Button
-          style={{ backgroundColor: "#a2988e" }}
-          variant="contained"
-          type="reset"
-          value="borrar"
-        >
-          Borrar
-        </Button>
-      </Box> */}
       <div className="titulos">
         <h1 className="tituloParrafo">Contacto</h1>
         <p>
@@ -87,6 +51,23 @@ export const ContactoDesktop = () => {
             <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319400/uchi/iconos/shopping-cart_h9obws.png" />
           </Link>
         </div>
+
+        <Box ref={form} onSubmit={sendEmail} component="form" className="form">
+          <h2 className="titulo2">O escribinos</h2>
+          <TextField label="Tu nombre" name="user_name" required fullWidth />
+
+          <TextField label="Tu email" name="user_email" required fullWidth />
+          <TextField
+            fullWidth
+            multiline
+            rows={4}
+            name="message"
+            placeholder="Tu mensaje"
+          />
+          <button className="botonera" type="submit" value="Send">
+            Enviar
+          </button>
+        </Box>
       </div>
     </div>
   );

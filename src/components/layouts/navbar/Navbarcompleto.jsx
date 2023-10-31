@@ -1,17 +1,13 @@
 import Container from "react-bootstrap/Container";
-// import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
-// import { productos } from "../../../routes/productos.js";
-
-
 import { NavbarDesktop } from "./NavbarDesktop.jsx";
-import { NavbarCelular } from "./NavbarCelular.jsx";
+
 
 function Navbarcompleto() {
   return (
   
       <Navbar collapseOnSelect expand="md" className="Navbar">
+        
         <Container className="Container">
           <Navbar.Brand href="/">
             <img
@@ -22,7 +18,7 @@ function Navbarcompleto() {
           <Container className="Container2">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              {window.innerWidth > 700 ? <NavbarDesktop /> : <NavbarCelular />}
+              <NavbarDesktop />
               {/* <Nav className="me-auto">
                 <NavDropdown title="Productos" id="basic-nav-dropdown">
                   <NavDropdown.Item href="/productos">
