@@ -3,6 +3,7 @@
   min-height: 100vh;
   color: #3a3a3a;
   display: flex;
+  width: 486px;
 }
 .mediosContacto {
   display: flex;
@@ -33,7 +34,7 @@
   font-size: 20px;
   border: 1px;
   background-color: #f6f7f4;
-  width: 480px;
+  width: 486px;
   min-height: 48px;
   padding-left: 20px;
 }
