@@ -17,14 +17,7 @@ export const NavbarDesktop = () => {
             </NavDropdown.Item>
           ))}
         </NavDropdown>
-        <NavDropdown title="Servicios" id="basic-nav-dropdown">
-          <NavDropdown.Item className="dropdown" href="/servicios">
-            Todos los servicios
-          </NavDropdown.Item>
-          <NavDropdown.Item className="dropdown" href="servicios/interiorismo">
-            Interiorismo
-          </NavDropdown.Item>
-        </NavDropdown>
+        <Nav.Link href="/servicios">Servicios</Nav.Link>
         <Nav.Link href="/about">Sobre UCHI</Nav.Link>
         <Nav.Link href="/info">Información útil</Nav.Link>
 

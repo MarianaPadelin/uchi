@@ -1,7 +1,19 @@
-.slidesInteriorismo{
-    max-height: 800px;
-}
 
 .carouselInteriorismo{
-    margin-top: 5vh;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 128px;
+}
+
+.imagenCarousel{
+    max-width:300px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+    .carouselInteriorismo{
+        margin-bottom: 120px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

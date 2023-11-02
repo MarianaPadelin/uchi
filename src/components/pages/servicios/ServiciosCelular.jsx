@@ -40,7 +40,7 @@ export const ServiciosCelular = () => {
                 marginBottom: "40px",
               }}
             />
-            <h3>{title}</h3>
+            <h3 className="titulo2">{title}</h3>
 
             <Link className="link" to={path}>
               Ver más

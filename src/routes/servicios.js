@@ -20,6 +20,9 @@ export const servicios = [
       "Trabajamos en conjunto con los clientes teniendo en cuenta la intensidad de uso, sus necesidades y la versatilidad de las piezas.",
     height: "113",
     width: "120",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698924611/uchi/vajilla/IMG_7841_2_lba1jj.jpg",
+    img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698924593/uchi/vajilla/IMG_7359_copy_aiwksx.jpg",
+    img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698924576/uchi/vajilla/IMG_7352_ok1xgm.jpg",
   },
   {
     id: "iluminación",

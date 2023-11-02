@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 
-export const ContactoCelu = () => {
+export const ContactoCelu = ({ sendEmail, form }) => {
   return (
     <div>
       <div className="titulos">
@@ -12,7 +12,7 @@ export const ContactoCelu = () => {
           querés hacernos una consulta no dudes en ponerte en contacto con
           nosotros.
         </p>
-        <p style={{ display: "flex", justifyContent: "center" }}>
+        <p style={{ display: "flex", justifyContent: "center", textAlign:"center" }}>
           +54 0000 0000
           <br />
           hola@uchi.com.ar
@@ -49,44 +49,44 @@ export const ContactoCelu = () => {
           </Link>
         </div>
       </div>
+      <form
+        action="mailto:marianapadelin@gmail.com"
+        method="post"
+        ref={form}
+        onSubmit={sendEmail}
+        className="form"
+      >
+        <p>
+          También podés escribirnos y nos pondremos en contacto a la brevedad
+        </p>
+        <input
+          label="Tu nombre"
+          name="user_name"
+          required
+          className="input"
+          placeholder="Tu nombre"
+        />
 
-      {/* <Box component="form" className="form">
-        <TextField label="Nombre" required fullWidth variant="filled" />
-        <TextField
-          label="Teléfono de contacto"
+        <input
+          placeholder="Tu email"
+          label="Tu email"
+          name="user_email"
           required
-          fullWidth
-          variant="filled"
+          className="input"
         />
-        <TextField
-          label="Mail de contacto"
-          required
-          fullWidth
-          variant="filled"
+        <textarea
+          rows={5}
+          name="message"
+          placeholder="Tu mensaje"
+          className="input"
+          id="textArea"
         />
-        <TextField
-          fullWidth
-          multiline
-          rows={4}
-          placeholder="Escriba aquí su consulta"
-        />
-        <Button
-          style={{ backgroundColor: "#a2988e" }}
-          variant="contained"
-          type="submit"
-          value="send"
-        >
-          Enviar
-        </Button>
-        <Button
-          style={{ backgroundColor: "#a2988e" }}
-          variant="contained"
-          type="reset"
-          value="borrar"
-        >
-          Borrar
-        </Button>
-      </Box> */}
+        <div id="botonForm">
+          <button className="botonera" type="submit" value="Send">
+            Enviar mensaje
+          </button>
+        </div>
+      </form>
     </div>
   );
 };

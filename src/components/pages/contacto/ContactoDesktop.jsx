@@ -1,8 +1,9 @@
 
-import { Box, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 
+
 export const ContactoDesktop = ({ sendEmail, form }) => {
+
   return (
     <div className="contacto">
       <div className="titulos">
@@ -52,22 +53,42 @@ export const ContactoDesktop = ({ sendEmail, form }) => {
           </Link>
         </div>
 
-        <Box ref={form} onSubmit={sendEmail} component="form" className="form">
+        <form
+          action="mailto:marianapadelin@gmail.com"
+          method="post"
+          ref={form}
+          onSubmit={sendEmail}
+          className="form"
+        >
           <h2 className="titulo2">O escribinos</h2>
-          <TextField label="Tu nombre" name="user_name" required fullWidth />
+          <input
+            label="Tu nombre"
+            name="user_name"
+            required
+            className="input"
+            placeholder="Tu nombre"
+          />
 
-          <TextField label="Tu email" name="user_email" required fullWidth />
-          <TextField
-            fullWidth
-            multiline
-            rows={4}
+          <input
+            placeholder="Tu email"
+            label="Tu email"
+            name="user_email"
+            required
+            className="input"
+          />
+          <textarea
+            rows={5}
             name="message"
             placeholder="Tu mensaje"
+            className="input"
+            id="textArea"
           />
-          <button className="botonera" type="submit" value="Send">
-            Enviar
-          </button>
-        </Box>
+          <div id="botonForm">
+            <button className="botonera" type="submit" value="Send">
+              Enviar mensaje
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
