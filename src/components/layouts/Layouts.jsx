@@ -6,7 +6,7 @@ import NavbarCelular from "./navbar/NavbarCelular";
 const Layouts = () => {
   return (
     <>
-      {window.innerWidth > 700 ? <Navbarcompleto /> : <NavbarCelular />}
+      {window.innerWidth > 768 ? <Navbarcompleto /> : <NavbarCelular />}
       
       <Outlet />
       <Footer />

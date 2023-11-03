@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 
-export const ContactoDesktop = ({ sendEmail, form }) => {
+export const ContactoDesktop = ({ sendEmail, form, nombre, email, mensaje, setNombre, setEmail, setMensaje }) => {
 
   return (
     <div className="contacto">
@@ -67,6 +67,8 @@ export const ContactoDesktop = ({ sendEmail, form }) => {
             required
             className="input"
             placeholder="Tu nombre"
+            onChange={(event) => setNombre(event.target.value)}
+            value={nombre}
           />
 
           <input
@@ -75,6 +77,8 @@ export const ContactoDesktop = ({ sendEmail, form }) => {
             name="user_email"
             required
             className="input"
+            onChange={(event) => setEmail(event.target.value)}
+            value={email}
           />
           <textarea
             rows={5}
@@ -82,6 +86,8 @@ export const ContactoDesktop = ({ sendEmail, form }) => {
             placeholder="Tu mensaje"
             className="input"
             id="textArea"
+            onChange={(event) => setMensaje(event.target.value)}
+            value={mensaje}
           />
           <div id="botonForm">
             <button className="botonera" type="submit" value="Send">

@@ -25,7 +25,7 @@ export const HomeCelular = () => {
       <Carousel indicators={false} touch={true}>
         {imagenesVerticales.map(({ id, url }) => (
           <Carousel.Item key={id}>
-            <img width="100%" style={{ opacity: "70%" }} src={url}></img>
+            <img style={{ opacity: "70%" }} src={url}></img>
             <CarouselCaption className="textoCarrusel">
               <div className="texto1">
                 <h3 className="titulo3" style={{marginLeft:"0px", fontSize:"30px"}}>

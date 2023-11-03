@@ -4,7 +4,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div>{window.innerWidth > 600 ? <HomeDesktop /> : <HomeCelular />}</div>
+    <div>{window.innerWidth > 768 ? <HomeDesktop /> : <HomeCelular />}</div>
   );
 };
 

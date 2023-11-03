@@ -6,7 +6,7 @@ export const Detalle = ({ seleccionado }) => {
   return (
   <div>
 
-      {window.innerWidth > 700 ? (
+      {window.innerWidth > 768 ? (
         <ImagenesDesktop seleccionado={seleccionado} />
       ) : (
         <ImagenesCelular seleccionado={seleccionado} />

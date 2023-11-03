@@ -8,7 +8,7 @@ import "./ServicioIndividual.css";
 export const ServicioIndividual = ({ seleccionado }) => {
   return (
     <div>
-      {window.innerWidth > 600 ? (
+      {window.innerWidth > 768 ? (
         <ServicioIndDesktop seleccionado={seleccionado} />
       ) : (
         <ServicioIndCelu seleccionado={seleccionado} />

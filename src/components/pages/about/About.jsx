@@ -17,7 +17,7 @@ export const About = () => {
         </p>
       </div>
 
-      {window.innerWidth > 700 ? <AboutDesktop /> : <AboutCelular />}
+      {window.innerWidth > 768 ? <AboutDesktop /> : <AboutCelular />}
     </div>
   );
 }

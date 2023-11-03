@@ -5,6 +5,6 @@ import { ServiciosDesktop } from "./ServiciosDesktop";
 
 export const Servicios = () => {
   return (
-    <div>{window.innerWidth > 600 ? <ServiciosDesktop /> : <ServiciosCelular />}</div>
+    <div>{window.innerWidth > 768 ? <ServiciosDesktop /> : <ServiciosCelular />}</div>
   );
 }

@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 
-export const ContactoCelu = ({ sendEmail, form }) => {
+export const ContactoCelu = ({ sendEmail, form, nombre, email, mensaje, setNombre, setEmail, setMensaje }) => {
   return (
     <div>
       <div className="titulos">
@@ -12,7 +12,13 @@ export const ContactoCelu = ({ sendEmail, form }) => {
           querés hacernos una consulta no dudes en ponerte en contacto con
           nosotros.
         </p>
-        <p style={{ display: "flex", justifyContent: "center", textAlign:"center" }}>
+        <p
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+          }}
+        >
           +54 0000 0000
           <br />
           hola@uchi.com.ar
@@ -65,6 +71,8 @@ export const ContactoCelu = ({ sendEmail, form }) => {
           required
           className="input"
           placeholder="Tu nombre"
+          onChange={(event) => setNombre(event.target.value)}
+          value={nombre}
         />
 
         <input
@@ -73,6 +81,8 @@ export const ContactoCelu = ({ sendEmail, form }) => {
           name="user_email"
           required
           className="input"
+          onChange={(event) => setEmail(event.target.value)}
+          value={email}
         />
         <textarea
           rows={5}
@@ -80,6 +90,8 @@ export const ContactoCelu = ({ sendEmail, form }) => {
           placeholder="Tu mensaje"
           className="input"
           id="textArea"
+          onChange={(event) => setMensaje(event.target.value)}
+          value={mensaje}
         />
         <div id="botonForm">
           <button className="botonera" type="submit" value="Send">

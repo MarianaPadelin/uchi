@@ -27,12 +27,30 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .aboutDetalle {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0px;
     width: 80%;
+
   }
+  .divDeBotones{
+    margin-left: 20px;
+    margin-right: 20px;
+    gap:5px;
+  }
+ #textoEscondido{
+  text-align: left;
+ }
+
+ #tituloAle{
+  text-align: left;
+ }
+
+ .btn{
+  padding: 0!important;
+  border: none;
+ }
 
 }

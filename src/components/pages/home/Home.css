@@ -1,10 +1,9 @@
 .home {
   background-color: #ffffff;
-  min-height: 30vh;
   color: #3a3a3a;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
 }
 
@@ -36,11 +35,13 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .home {
     height: 600px;
     margin-bottom: 100px;
     margin-top: 90px;
+    margin-left:0px;
+    margin-right:0px;
   }
 
 

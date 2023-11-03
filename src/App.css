@@ -92,7 +92,7 @@ p {
   margin-bottom: 40px!important;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .titulos{
     display:flex;
     justify-content: center;

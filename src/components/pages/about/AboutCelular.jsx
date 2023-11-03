@@ -1,4 +1,20 @@
+import { useState } from "react";
+import { TextoEscondido } from "./TextoEscondido";
+
 export const AboutCelular = () => {
+ const [mostrarTexto, setMostrarTexto] = useState(false);
+ const toggleButton = () => {
+  if(mostrarTexto == false){
+    setMostrarTexto(true)
+  } else setMostrarTexto(false)
+ }
+ 
+ 
+ 
+   // const toggleButton = ()=>{
+
+  //   <TextoEscondido />
+  // }
   return (
     <div className="aboutCelu">
       <img
@@ -40,27 +56,14 @@ export const AboutCelular = () => {
         src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698606899/uchi/about/M_Sobre_Uchi-3_zrntp1.jpg"
       ></img>
 
-      <div className="aboutDetalle">
-        <a className="btn">
-          <h1 className="titulo2" id="label">Sobre Alejandra Hanashiro</h1>
-          <p>
-            Nací en Okinawa, Japón, pero me crie en Argentina, país donde me
-            mudé cuando tenía un año. Soy diseñadora industrial egresada de la
-            Facultad de Diseño y Urbanismo de la Universidad de Buenos Aires.
-            Volví a Japón a estudiar en dos oportunidades. En 2015 dediqué mi
-            estadía a aprender el arte popular de Okinawa. En 2019 con una beca
-            JICA (Japan International Cooperation Agency), viajé a Kyoto para
-            aprender distintas técnicas artesanales y tradicionales con el fin
-            de aplicarlas en el diseño desde el diseño de productos. Actualmente
-            formo parte del equipo de Patricia Lacano, en el cual nos dedicamos
-            a desarrollar mobiliario, iluminación e interiorismo tanto para
-            viviendas como para espacios semipúblicos. Me interesan los oficios
-            y la exploración de los materiales naturales, ya que me gusta la
-            manera en que cambian evidenciando su uso y el paso del tiempo.
-            Desde UCHI mi intención es dar a conocer la cultura japonesa a
-            través de objetos de uso cotidiano y utilitarios.
-          </p>
-        </a>
+      <div className="aboutDetalle" >
+        <button className="btn" onClick={toggleButton}>
+          <h1 className="titulo2" id="tituloAle">
+            Sobre Alejandra Hanashiro
+            <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1699041433/uchi/iconos/boto%CC%81n_sobre_alejandra_c1vxjk.png"></img>
+          </h1>
+          {mostrarTexto ? <TextoEscondido /> : null}
+        </button>
       </div>
 
       <div className="divDeBotones">
