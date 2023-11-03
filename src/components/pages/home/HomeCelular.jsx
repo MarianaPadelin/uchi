@@ -28,7 +28,7 @@ export const HomeCelular = () => {
             <img style={{ opacity: "70%" }} src={url}></img>
             <CarouselCaption className="textoCarrusel">
               <div className="texto1">
-                <h3 className="titulo3" style={{marginLeft:"0px", fontSize:"30px"}}>
+                <h3 className="titulo3" style={{marginLeft:"0px", marginRight:"0px", fontSize:"30px"}}>
                   Tradición japonesa, fabricación local
                 </h3>
               </div>
