@@ -26,7 +26,7 @@ export const HomeDesktop = () => {
         {imagenes.map(({ id, url }) => (
           <Carousel.Item key={id}>
             <img
-              style={{ opacity: "70%", height: "747px", width: "100%" }}
+              style={{ opacity: "70%", width: "100%" }}
               src={url}
             ></img>
 
