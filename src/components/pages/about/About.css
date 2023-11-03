@@ -1,15 +1,14 @@
-.about{
-    background-color: #ffffff;
-    color: #3a3a3a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.about {
+  background-color: #ffffff;
+  color: #3a3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.aboutDetalle{
-    display: flex;
+.aboutDetalle {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -18,23 +17,22 @@
   margin-bottom: 128px;
 }
 
-.divDeBotones{
+.divDeBotones {
   display: flex;
-  gap:20px;
+  gap: 20px;
 }
-.aboutCelu{
+.aboutCelu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media only screen and (max-width: 600px){
- .aboutDetalle{
+@media only screen and (max-width: 600px) {
+  .aboutDetalle {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    width: 80%;
+  }
 
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 0px;
-  width:80%
-
- }
 }

@@ -68,6 +68,7 @@
   margin-bottom: 128px;
   margin-right: 219px;
   color:black;
+  width:486px;
 }
 
 .tituloParrafo{
@@ -99,6 +100,7 @@ p {
     margin-right: 20px;
     margin-bottom:0px;
     margin-top:0px;
+    width: auto;
   }
   .link1 {
     display: flex;

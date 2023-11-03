@@ -20,4 +20,9 @@ export const productos = [
     path: "/productos/accesorios",
     title: "Accesorios",
   },
+  {
+    id: "oportunidades",
+    path: "/detalleProducto/12",
+    title: "Oportunidades",
+  },
 ];
