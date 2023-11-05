@@ -47,7 +47,14 @@
   background-color: transparent!important;
 }
 
+.listadoFotos{
+  margin-bottom: 40px;
+}
 
+#botonArriba{
+  text-decoration: none;
+  margin-top: 24px;
+}
 
 @media only screen and (max-width: 768px) {
   .fotoProducto{   width:350px;

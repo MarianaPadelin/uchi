@@ -13,13 +13,17 @@
 }
 
 .datosProducto {
-  margin-top: 0px;
+
   display: flex;
   flex-direction: column;
   margin-left: 734px;
   margin-right: 219px;
+  margin-top: 40px;
   color: black;
   margin-bottom: 128px;
+  width: 486px;
+  line-height: 2;
+  
 }
 
 .cuidados {
@@ -70,6 +74,13 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 40px;
+  }
+
+  .datosProducto{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    width: auto;
   }
 
   .videos {

@@ -15,7 +15,17 @@ export const ImagenesDesktop = ({ seleccionado }) => {
       </div>
       <div className="titulos" style={{ marginTop: "0" }}>
         <h1 className="tituloParrafo">{seleccionado.title}</h1>
-        <p>{seleccionado.descripcion}</p>
+        <p>
+          {seleccionado.descripcion}
+          <br />
+          {seleccionado.desc2 && seleccionado.desc2}
+          <br />
+          {seleccionado.desc3 && seleccionado.desc3}
+          <br />
+          {seleccionado.desc4 && seleccionado.desc4}
+          <br />
+          {seleccionado.desc4 && seleccionado.desc5}
+        </p>
       </div>
       <ImageList
         sx={{ width: 800, marginBottom: "0" }}
@@ -52,15 +62,29 @@ export const ImagenesDesktop = ({ seleccionado }) => {
         </ImageListItem>
       </ImageList>
       {seleccionado.especificaciones && (
-      <div className="titulos" style={{ marginBottom: "40px" }}>
-        <p>{seleccionado.especificaciones}</p>
-      </div>
+        <div className="titulos" style={{ marginBottom: "40px" }}>
+          <p>
+            {seleccionado.especificaciones}
+            <br />
+            {seleccionado.esp2 && seleccionado.esp2}
+            <br />
+            {seleccionado.esp3 && seleccionado.esp3}
+          </p>
+        </div>
       )}
       {seleccionado.medidas ? (
         <div className="datosProducto">
           <h2 className="titulo3">Datos del producto</h2>
           <span style={{ display: "flex", gap: "40px" }}>
-            <p>{seleccionado.medidas}</p>
+            <p>
+              {seleccionado.medidas}
+              <br />
+              {seleccionado.medidas2 && seleccionado.medidas2}
+              <br />
+              {seleccionado.medidas3 && seleccionado.medidas3}
+              <br />
+              {seleccionado.medidas4 && seleccionado.medidas4}
+            </p>
 
             <Link
               to={seleccionado.enlace}

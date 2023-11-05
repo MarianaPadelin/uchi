@@ -5,7 +5,7 @@
   margin-top: 2vh;
   padding-left: 35%;
   padding-right: 35%;
-  padding-top:4vh;
+  padding-top: 4vh;
   padding-bottom: 4vh;
   display: flex;
   justify-content: center;
@@ -14,17 +14,21 @@
   text-align: center;
 }
 
-h5{
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+.parrafoServicios {
+  width: 350px;
 }
 
-@media only screen and (max-width: 768px){
-  .homeServicios{
+h5 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .homeServicios {
     padding-left: 54px;
     padding-right: 54px;
-
   }
-
+  .parrafoServicios {
+    width: auto;
+  }
 }

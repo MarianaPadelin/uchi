@@ -20,21 +20,45 @@ export const ImagenesCelular = ({ seleccionado }) => {
         <h1 className="tituloParrafo" style={{ marginTop: "80px" }}>
           {seleccionado.title}
         </h1>
-        <p>{seleccionado.descripcion}</p>
+        <p>
+          {seleccionado.descripcion}
+          <br />
+          {seleccionado.desc2 && seleccionado.desc2}
+          <br />
+          {seleccionado.desc3 && seleccionado.desc3}
+          <br />
+          {seleccionado.desc4 && seleccionado.desc4}
+          <br />
+          {seleccionado.desc4 && seleccionado.desc5}
+        </p>
       </div>
       <img className="imagenesCelu" id="img2" src={seleccionado.img2}></img>
       <img className="imagenesCelu" id="img1" src={seleccionado.img1}></img>
 
       {seleccionado.especificaciones && (
         <div className="titulos" style={{ marginTop: "0px" }}>
-          <p>{seleccionado.especificaciones}</p>
+          <p>
+            {seleccionado.especificaciones}
+            <br />
+            {seleccionado.esp2 && seleccionado.esp2}
+            <br />
+            {seleccionado.esp3 && seleccionado.esp3}
+          </p>
         </div>
       )}
 
       {seleccionado.medidas ? (
-        <div className="titulos">
-          <h2 className="titulo3">Datos del producto</h2>
-          <p style={{ fontSize: "16px" }}>{seleccionado.medidas}</p>
+        <div className="datosProducto">
+          <h2 className="titulo2">Datos del producto</h2>
+          <p style={{ fontSize: "16px" }}>
+            {seleccionado.medidas}
+            <br />
+            {seleccionado.medidas2 && seleccionado.medidas2}
+            <br />
+            {seleccionado.medidas3 && seleccionado.medidas3}
+            <br />
+            {seleccionado.medidas4 && seleccionado.medidas4}
+          </p>
 
           <Link
             to={seleccionado.enlace}
