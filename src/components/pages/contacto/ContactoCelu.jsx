@@ -8,9 +8,8 @@ export const ContactoCelu = ({ sendEmail, form, nombre, email, mensaje, setNombr
       <div className="titulos">
         <h1 className="tituloParrafo">Contacto</h1>
         <p>
-          Si te gustaron nuestros productos, querés conocer más sobre nosotros o
-          querés hacernos una consulta no dudes en ponerte en contacto con
-          nosotros.
+          Ante cualquier consulta o comentario no dudes en contactarte con
+          nosotros
         </p>
         <p
           style={{
@@ -19,7 +18,7 @@ export const ContactoCelu = ({ sendEmail, form, nombre, email, mensaje, setNombr
             textAlign: "center",
           }}
         >
-          +54 0000 0000
+          +54 9 11 5573 7578
           <br />
           hola@uchi.com.ar
         </p>
@@ -27,7 +26,7 @@ export const ContactoCelu = ({ sendEmail, form, nombre, email, mensaje, setNombr
         <div className="redesContacto">
           <Link
             style={{ color: "inherit", textDecoration: "none" }}
-            to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
+            to="https://wa.me/541155737578?text=Buenos días. Estoy interesado en información sobre"
             target="_blank"
           >
             <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319402/uchi/iconos/ph_whatsapp-logo-thin_ahnkdg.png" />

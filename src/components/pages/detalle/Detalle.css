@@ -55,6 +55,12 @@
   margin: 128px;
 }
 
+.soloBotonComprar{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 768px){
    .cuidados{
     padding-left:20px;
@@ -70,4 +76,20 @@
     margin-top: 40px;
     margin-bottom: 40px;
    }
+
+   /* #img1{
+    width:490px;
+    height:678px;
+   }
+
+   #img2{
+    width:490px;
+    height: 300px;
+   }
+
+   #iimg3{
+    width: 490px;
+    height: 350px;
+   } */
+
 }

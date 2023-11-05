@@ -9,56 +9,70 @@ export const ImagenesCelular = ({ seleccionado }) => {
           marginTop: "40px",
           justifyContent: "end",
           marginRight: "20px",
-          marginBottom:"0px"
+          marginBottom: "0px",
         }}
         to="/productos"
       >
-        Volver a la colección
+        Todos los productos
       </Link>
 
       <div className="titulos">
-        <h1 className="tituloParrafo" style={{marginTop:"80px"}}>{seleccionado.title}</h1>
+        <h1 className="tituloParrafo" style={{ marginTop: "80px" }}>
+          {seleccionado.title}
+        </h1>
         <p>{seleccionado.descripcion}</p>
       </div>
-      <img className="imagenesCelu" src={seleccionado.img2}></img>
-      <img className="imagenesCelu" src={seleccionado.img1}></img>
+      <img className="imagenesCelu" id="img2" src={seleccionado.img2}></img>
+      <img className="imagenesCelu" id="img1" src={seleccionado.img1}></img>
 
       <div className="titulos" style={{ marginTop: "0px" }}>
         <p>{seleccionado.especificaciones}</p>
       </div>
-      <div className="titulos">
-        <h2 className="titulo3">Datos del producto</h2>
-        <p style={{fontSize:"16px"}}>{seleccionado.medidas}</p>
 
-        <Link
-          to={seleccionado.enlace}
-          target="_blank"
-          style={{
-            textDecoration: "none",
-            display: "flex",
-            justifyContent: "center",
-            marginBottom: "40px",
-          }}
-        >
-          <button className="botonera">Comprar</button>
-        </Link>
-      </div>
+      {seleccionado.medidas ? (
+        <div className="titulos">
+          <h2 className="titulo3">Datos del producto</h2>
+          <p style={{ fontSize: "16px" }}>{seleccionado.medidas}</p>
 
-      <img className="imagenesCelu" src={seleccionado.img3}></img>
+          <Link
+            to={seleccionado.enlace}
+            target="_blank"
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: "40px",
+            }}
+          >
+            <button className="botonera">Comprar</button>
+          </Link>
+        </div>
+      ) : (
+        <div className="soloBotonComprar">
+          <Link
+            to={seleccionado.enlace}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <button className="botonera">Comprar</button>
+          </Link>
+        </div>
+      )}
 
-      <div className="cuidados">
-        <h2 className="titulo2">Cuidados del producto</h2>
-        <ul>
-          {seleccionado.li1 && <li>{seleccionado.li1}</li>}
-          {seleccionado.li2 && <li>{seleccionado.li2}</li>}
-          {seleccionado.li3 && <li>{seleccionado.li3}</li>}
-          {seleccionado.li4 && <li>{seleccionado.li4}</li>}
-          {seleccionado.li5 && <li>{seleccionado.li5}</li>}
-          {seleccionado.li6 && <li>{seleccionado.li6}</li>}
-          {seleccionado.li7 && <li>{seleccionado.li7}</li>}
-          {seleccionado.li8 && <li>{seleccionado.li8}</li>}
-        </ul>
-      </div>
+      <img className="imagenesCelu" id="img3" src={seleccionado.img3}></img>
+      {seleccionado.li1 && (
+        <div className="cuidados">
+          <h2 className="titulo2">Cuidados del producto</h2>
+          <ul>
+            {seleccionado.li1 && <li>{seleccionado.li1}</li>}
+            {seleccionado.li2 && <li>{seleccionado.li2}</li>}
+            {seleccionado.li3 && <li>{seleccionado.li3}</li>}
+            {seleccionado.li4 && <li>{seleccionado.li4}</li>}
+            {seleccionado.li5 && <li>{seleccionado.li5}</li>}
+            {seleccionado.li6 && <li>{seleccionado.li6}</li>}
+          </ul>
+        </div>
+      )}
 
       <Link
         to={`/productos/${seleccionado.categoria}`}

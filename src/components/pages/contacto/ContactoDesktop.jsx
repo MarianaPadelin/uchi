@@ -9,18 +9,17 @@ export const ContactoDesktop = ({ sendEmail, form, nombre, email, mensaje, setNo
       <div className="titulos">
         <h1 className="tituloParrafo">Contacto</h1>
         <p>
-          Si te gustaron nuestros productos, querés conocer más sobre nosotros o
-          querés hacernos una consulta no dudes en ponerte en contacto con
-          nosotros.
+          Ante cualquier consulta o comentario no dudes en contactarte con
+          nosotros
         </p>
 
         <span className="mediosContacto">
-          <p>+54 0000 0000</p>
+          <p>+54 9 11 5573 7578</p>
           <p>hola@uchi.com.ar</p>
 
           <Link
             style={{ color: "inherit", textDecoration: "none" }}
-            to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
+            to="https://wa.me/541155737578?text=Buenos días. Estoy interesado en información sobre"
             target="_blank"
           >
             <p>
@@ -60,7 +59,9 @@ export const ContactoDesktop = ({ sendEmail, form, nombre, email, mensaje, setNo
           onSubmit={sendEmail}
           className="form"
         >
-          <h2 className="titulo2">O escribinos</h2>
+          <p>
+            También podés escribirnos y nos pondremos en contacto a la brevedad
+          </p>
           <input
             label="Tu nombre"
             name="user_name"

@@ -7,13 +7,15 @@ export const ServiciosCelular = () => {
   return (
     <div className="servicios">
       <div className="titulos">
-        <h1 className="tituloParrafo">Nuestros servicios</h1>
+        <h1 className="tituloParrafo">Servicios</h1>
+        <p>Diseñamos y producimos objetos, desde packaging a espacios.</p>
         <p>
-          Diseño, desarrollo y produzco objetos, desde packaging a espacios. El
-          resultado final es producto del desarrollo en base a las necesidades
-          funcionales y requerimientos estéticos del caso. La relación entre la
-          materialización, función y uso de los elementos es clave. Así también
-          el mensaje o idea que se quiere transmitir.
+          El resultado final es producto del desarrollo en base a las
+          necesidades funcionales y requerimientos estéticos en cada caso.
+        </p>
+        <p>
+          Consideramos que la relación material - función - uso de los elementos
+          es clave, así como el mensaje y la idea que se quieren transmitir.
         </p>
       </div>
       <ImageList

@@ -10,7 +10,7 @@ export const ImagenesDesktop = ({ seleccionado }) => {
         style={{ marginLeft: "48px", marginTop: "98px", marginBottom: "0px" }}
       >
         <Link style={{ color: "black" }} to="/productos">
-          Volver a la colección
+          Todos los productos
         </Link>
       </div>
       <div className="titulos" style={{ marginTop: "0" }}>
@@ -54,33 +54,45 @@ export const ImagenesDesktop = ({ seleccionado }) => {
       <div className="titulos" style={{ marginBottom: "40px" }}>
         <p>{seleccionado.especificaciones}</p>
       </div>
-      <div className="datosProducto">
-        <h2 className="titulo3">Datos del producto</h2>
-        <span style={{ display: "flex", gap: "40px" }}>
-          <p>{seleccionado.medidas}</p>
-          <Link
-            to={seleccionado.enlace}
-            target="_blank"
-            style={{ textDecoration: "none" }}
-          >
-            <button className="botonera">Comprar</button>
-          </Link>
-        </span>
-      </div>
+      {seleccionado.medidas ? (
+        <div className="datosProducto">
+          <h2 className="titulo3">Datos del producto</h2>
+          <span style={{ display: "flex", gap: "40px" }}>
+            <p>{seleccionado.medidas}</p>
 
-      <div className="cuidados">
-        <h2 className="tituloParrafo">Cuidados del producto</h2>
-        <ul>
-          {seleccionado.li1 && <li>{seleccionado.li1}</li>}
-          {seleccionado.li2 && <li>{seleccionado.li2}</li>}
-          {seleccionado.li3 && <li>{seleccionado.li3}</li>}
-          {seleccionado.li4 && <li>{seleccionado.li4}</li>}
-          {seleccionado.li5 && <li>{seleccionado.li5}</li>}
-          {seleccionado.li6 && <li>{seleccionado.li6}</li>}
-          {seleccionado.li7 && <li>{seleccionado.li7}</li>}
-          {seleccionado.li8 && <li>{seleccionado.li8}</li>}
-        </ul>
-      </div>
+            <Link
+              to={seleccionado.enlace}
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <button className="botonera">Comprar</button>
+            </Link>
+          </span>
+        </div>
+      ) : (
+        <div className="soloBotonComprar">
+        <Link
+          to={seleccionado.enlace}
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
+          <button className="botonera">Comprar</button>
+        </Link>
+        </div>
+      )}
+      {seleccionado.li1 && (
+        <div className="cuidados">
+          <h2 className="tituloParrafo">Cuidados del producto</h2>
+          <ul>
+            {seleccionado.li1 && <li>{seleccionado.li1}</li>}
+            {seleccionado.li2 && <li>{seleccionado.li2}</li>}
+            {seleccionado.li3 && <li>{seleccionado.li3}</li>}
+            {seleccionado.li4 && <li>{seleccionado.li4}</li>}
+            {seleccionado.li5 && <li>{seleccionado.li5}</li>}
+            {seleccionado.li6 && <li>{seleccionado.li6}</li>}
+          </ul>
+        </div>
+      )}
       <Link
         style={{ marginBottom: "128px", textDecoration: "none" }}
         to={`/productos/${seleccionado.categoria}`}

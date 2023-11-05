@@ -21,13 +21,14 @@
   display: flex;
   gap: 20px;
 }
-.aboutCelu {
+
+
+@media only screen and (max-width: 768px) {
+  .aboutCelu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-@media only screen and (max-width: 768px) {
   .aboutDetalle {
     margin-left: 20px;
     margin-right: 20px;
@@ -42,6 +43,7 @@
   }
  #textoEscondido{
   text-align: left;
+ 
  }
 
  #tituloAle{
@@ -50,7 +52,7 @@
 
  .btn{
   padding: 0!important;
-  border: none;
+  border: none!important;
  }
 
 }

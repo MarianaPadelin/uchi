@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="parrafoFooter">
               <Link
                 style={{ color: "inherit", textDecoration: "none" }}
-                to="https://wa.me/541169550440?text=Buenos días. Estoy interesado en información sobre"
+                to="https://wa.me/541155737578?text=Buenos días. Estoy interesado en información sobre"
                 target="_blank"
               >
                 <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698319402/uchi/iconos/ph_whatsapp-logo-thin_ahnkdg.png" />
@@ -24,7 +24,7 @@ const Footer = () => {
               </Link>
             </p>
             <p className="parrafoFooter">hola@uchi.com.ar</p>
-            <p className="parrafoFooter">+54 0000 0000</p>
+            <p className="parrafoFooter">+54 9 11 5573 7578</p>
           </div>
         </div>
 

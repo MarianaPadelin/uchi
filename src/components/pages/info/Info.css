@@ -9,14 +9,15 @@
 .parrafoInfo{
     margin-left: 218px;
     margin-bottom: 128px;
-    max-width: 686px;
+    max-width: 516px;
     
 }
 
 .parrafoColumnas{
     display: flex;
     columns:2;
-    gap:20px;
+    justify-content: space-between;
+    line-height: 2;
     
 }
 

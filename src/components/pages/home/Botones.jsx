@@ -140,7 +140,7 @@ export default function ButtonBaseDemo() {
       <div className="divAbajo">
         <Link style={{ textDecoration: "none" }} to="/productos">
           <button className="botonera" href="/productos">
-            VER TODOS
+            Ver todos
           </button>
         </Link>
       </div>

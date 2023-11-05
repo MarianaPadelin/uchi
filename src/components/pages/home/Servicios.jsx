@@ -7,13 +7,11 @@ export const Servicios = () => {
     <div className="homeServicios">
       <h2 className="titulo3">Servicios</h2>
       <p>
-        Ofrecemos servicios de packaging, vajilla, iluminación, interiorismo,
-        piezas de madera y nudos japoneses
+        Diseñamos tus proyectos. <br /> Te invitamos a conocer más acerca de<br /> nuestros
+        servicios.
       </p>
       <Link style={{ textDecoration: "none" }} to="/servicios">
-        <button className="botonera2">
-          VER MÁS
-        </button>
+        <button className="botonera2">Más información</button>
       </Link>
     </div>
   );

@@ -10,11 +10,6 @@ export const AboutCelular = () => {
  }
  
  
- 
-   // const toggleButton = ()=>{
-
-  //   <TextoEscondido />
-  // }
   return (
     <div className="aboutCelu">
       <img

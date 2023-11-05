@@ -40,7 +40,7 @@ export const servicios = [
     icono:
       "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698411533/uchi/iconos/Iluminaci%C3%B3n_cshimc.png",
     descripcion:
-      "La luz es uno de los componentes principales de una ambientación, diseñamos luminarias de distintas tipologías con foco en la creación de ambientes cálidos.",
+      "Diseño de luminarias con distintas tipologías con foco en la creación de ambientes cálidos.",
     height: "81",
     width: "150",
     img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1699021538/uchi/iluminacion/IMG_790_sinmig_l2rag2.jpg",
@@ -93,7 +93,7 @@ export const servicios = [
     icono:
       "https://res.cloudinary.com/dvxkjikvk/image/upload/v1698411528/uchi/iconos/Nudos_Japoneses_lon7p6.png",
     descripcion:
-      "Los nudos en la cultura japonesa tienen distintos significados, representan desde los lazos entre las personas hasta límites. Simbolizan comportamientos, intenciones, límites.",
+      "Los nudos en la cultura japonesa tienen distintos significados, representan desde los lazos entre las personas hasta límites.",
 
     height: "99",
     width: "130",

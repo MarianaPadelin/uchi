@@ -13,9 +13,9 @@ export const Productos = ({ items }) => {
       <div className="titulos">
         <h1 className="tituloParrafo">Nuestros productos</h1>
         <p>
-          Confeccionamos nuestros productos de manera artesanal con materias
-          primas naturales de origen local. Nos apasiona el diseño, el uso de
-          productos naturales y la perdurabilidad de las piezas.
+          Nuestras fabricación se realiza de forma artesanal con materia prima
+          de origen local. Consideramos fundamental la perdurabilidad de
+          nuestras piezas.
         </p>
       </div>
 
@@ -78,7 +78,7 @@ export const Productos = ({ items }) => {
       <Link className="link" to="/productos">
         Ver todos
       </Link>
-      <a href="#top" style={{textDecoration:"none"}}>
+      <a href="#top" style={{ textDecoration: "none" }}>
         <button className="botonera2">Volver arriba</button>
       </a>
     </div>
