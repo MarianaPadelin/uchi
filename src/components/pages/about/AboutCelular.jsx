@@ -51,7 +51,7 @@ export const AboutCelular = () => {
         src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1698606899/uchi/about/M_Sobre_Uchi-3_zrntp1.jpg"
       ></img>
 
-      <div className="aboutDetalle" >
+      <span className="aboutAle" >
         <button className="btn" onClick={toggleButton}>
           <h1 className="titulo2" id="tituloAle">
             Sobre Alejandra Hanashiro
@@ -59,12 +59,9 @@ export const AboutCelular = () => {
           </h1>
           {mostrarTexto ? <TextoEscondido /> : null}
         </button>
-      </div>
+      </span>
 
-      <div className="divDeBotones">
-        <button className="botonera">Ver mi currículum</button>
-        <button className="botonera2">Ver mi portfolio</button>
-      </div>
+     
     </div>
   );
 }

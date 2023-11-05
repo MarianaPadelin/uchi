@@ -31,6 +31,10 @@ export const TextoEscondido = () => {
         Desde UCHI mi intención es dar a conocer la cultura japonesa a través de
         objetos de uso cotidiano y utilitarios.
       </p>
+      <div className="divDeBotones">
+        <button className="botonera">Ver mi currículum</button>
+        <button className="botonera2">Ver mi portfolio</button>
+      </div>
     </div>
   );
 }
