@@ -23,7 +23,6 @@
   margin-bottom: 200px;
   display: flex;
   justify-content: center;
-  
 }
 
 .texto2 {
@@ -40,15 +39,24 @@
     height: 600px;
     margin-bottom: 100px;
     margin-top: 90px;
-
   }
 
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex!important;
+    justify-content: center;
+   
+  }
+
+  .imagenCarrusel{
+    width: 100%;
+  }
 
   .texto1 {
     margin-bottom: 210px;
     display: flex;
     justify-content: center;
-
   }
   .texto2 {
     display: flex;

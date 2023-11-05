@@ -51,9 +51,11 @@ export const ImagenesDesktop = ({ seleccionado }) => {
           </ImageListItem>
         </ImageListItem>
       </ImageList>
+      {seleccionado.especificaciones && (
       <div className="titulos" style={{ marginBottom: "40px" }}>
         <p>{seleccionado.especificaciones}</p>
       </div>
+      )}
       {seleccionado.medidas ? (
         <div className="datosProducto">
           <h2 className="titulo3">Datos del producto</h2>
@@ -71,13 +73,13 @@ export const ImagenesDesktop = ({ seleccionado }) => {
         </div>
       ) : (
         <div className="soloBotonComprar">
-        <Link
-          to={seleccionado.enlace}
-          target="_blank"
-          style={{ textDecoration: "none" }}
-        >
-          <button className="botonera">Comprar</button>
-        </Link>
+          <Link
+            to={seleccionado.enlace}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <button className="botonera">Comprar</button>
+          </Link>
         </div>
       )}
       {seleccionado.li1 && (
@@ -99,7 +101,6 @@ export const ImagenesDesktop = ({ seleccionado }) => {
       >
         <button className="botonera2">Ver más {seleccionado.categoria}</button>
       </Link>
-
       {seleccionado.video1 && (
         <div className="videos">
           <iframe

@@ -25,9 +25,11 @@ export const ImagenesCelular = ({ seleccionado }) => {
       <img className="imagenesCelu" id="img2" src={seleccionado.img2}></img>
       <img className="imagenesCelu" id="img1" src={seleccionado.img1}></img>
 
-      <div className="titulos" style={{ marginTop: "0px" }}>
-        <p>{seleccionado.especificaciones}</p>
-      </div>
+      {seleccionado.especificaciones && (
+        <div className="titulos" style={{ marginTop: "0px" }}>
+          <p>{seleccionado.especificaciones}</p>
+        </div>
+      )}
 
       {seleccionado.medidas ? (
         <div className="titulos">
