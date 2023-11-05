@@ -55,7 +55,7 @@ export const AboutCelular = () => {
         <button className="btn" onClick={toggleButton}>
           <h1 className="titulo2" id="tituloAle">
             Sobre Alejandra Hanashiro
-            <img src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1699041433/uchi/iconos/boto%CC%81n_sobre_alejandra_c1vxjk.png"></img>
+            <img style={{width:"30px"}} src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1699041433/uchi/iconos/boto%CC%81n_sobre_alejandra_c1vxjk.png"></img>
           </h1>
           {mostrarTexto ? <TextoEscondido /> : null}
         </button>
