@@ -1,5 +1,6 @@
 import { ImageList, ImageListItem } from "@mui/material";
 
+
 export const AboutDesktop = () => {
   return (
     <div>
@@ -106,8 +107,19 @@ export const AboutDesktop = () => {
         </p>
 
         <div className="divDeBotones">
-          <button className="botonera">Ver mi currículum</button>
-          <button className="botonera2">Ver mi portfolio</button>
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://www.sites.google.com/view/ahanashiro/cv"
+          >
+            <button className="botonera">Ver mi currículum</button>
+          </a>
+
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://www.behance.net/ahanashiro"
+          >
+            <button className="botonera2">Ver mi portfolio</button>
+          </a>
         </div>
       </div>
     </div>
