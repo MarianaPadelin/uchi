@@ -3,7 +3,7 @@ import { servicios } from "../../../routes/servicios";
 import "./Servicios.css";
 import { Link } from "react-router-dom";
 
-export const ServiciosDesktop = () => {
+export const ServiciosDesktop = ({ scrollToTop }) => {
   return (
     <div className="servicios">
       <div className="titulos">
@@ -34,7 +34,7 @@ export const ServiciosDesktop = () => {
             />
             <h3 className="titulo2">{title}</h3>
 
-            <Link className="link" to={path}>
+            <Link onClick={scrollToTop} className="link" to={path}>
               Ver más
             </Link>
           </ImageListItem>

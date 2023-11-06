@@ -7,7 +7,8 @@ import {
 import "./Productos.css";
 import { Link } from "react-router-dom";
 
-export const Productos = ({ items }) => {
+export const Productos = ({ items, scrollToTop }) => {
+ 
   return (
     <div className="productos">
       <div className="titulos">
@@ -57,7 +58,7 @@ export const Productos = ({ items }) => {
                 />
               }
               actionIcon={
-                <Link to={`/detalleProducto/${id}`}>
+                <Link onClick={scrollToTop} to={`/detalleProducto/${id}`}>
                   <Chip
                     style={{
                       backgroundColor: "#f6f6f4",

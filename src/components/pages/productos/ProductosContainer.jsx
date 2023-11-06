@@ -7,6 +7,10 @@ export const ProductosContainer = () => {
   const { nombreCategoria } = useParams();
   const [items, setItems] = useState([]);
 
+   const scrollToTop = () => {
+     window.scrollTo(0, 0);
+   };
+
   useEffect(() => {
     let busqueda;
     if (nombreCategoria) {
@@ -32,7 +36,7 @@ export const ProductosContainer = () => {
 
   return (
     <div>
-      <Productos items={items} />
+      <Productos items={items} scrollToTop={scrollToTop}/>
     </div>
   );
 };
