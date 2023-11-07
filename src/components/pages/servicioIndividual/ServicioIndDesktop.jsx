@@ -33,12 +33,6 @@ export const ServicioIndDesktop = ({ seleccionado }) => {
             <img className="imagenCarousel" src={seleccionado.img6}></img>
           </Stack>
         </Carousel.Item>
-        {/* <Carousel.Item className="slidesInteriorismo">
-          <img className="imagenCarousel" src={seleccionado.img2}></img>
-        </Carousel.Item>
-        <Carousel.Item className="slidesInteriorismo">
-          <img className="imagenCarousel" src={seleccionado.img3}></img>
-        </Carousel.Item> */}
       </Carousel>
       <p id="interiorismo">{seleccionado.infoExtra}</p>
       <div className="botonVolver">

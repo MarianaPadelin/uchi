@@ -29,12 +29,6 @@ export const ServicioIndCelu = ({ seleccionado }) => {
         <Carousel.Item className="slidesInteriorismo">
           <img className="imagenCarousel" src={seleccionado.img6}></img>
         </Carousel.Item>
-        {/* <Carousel.Item className="slidesInteriorismo">
-          <img className="imagenCarousel" src={seleccionado.img2}></img>
-        </Carousel.Item>
-        <Carousel.Item className="slidesInteriorismo">
-          <img className="imagenCarousel" src={seleccionado.img3}></img>
-        </Carousel.Item> */}
       </Carousel>
       <div className="botonVolver">
         <Link className="link" to="/servicios">

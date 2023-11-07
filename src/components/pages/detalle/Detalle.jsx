@@ -2,17 +2,20 @@ import "./Detalle.css";
 import { ImagenesDesktop } from "./ImagenesDesktop";
 import { ImagenesCelular } from "./ImagenesCelular";
 
-export const Detalle = ({ seleccionado }) => {
+export const Detalle = ({ seleccionado, scrollToTop }) => {
   return (
-  <div>
-
+    <div>
       {window.innerWidth > 768 ? (
-        <ImagenesDesktop seleccionado={seleccionado} />
+        <ImagenesDesktop
+          seleccionado={seleccionado}
+          scrollToTop={scrollToTop}
+        />
       ) : (
-        <ImagenesCelular seleccionado={seleccionado} />
+        <ImagenesCelular
+          seleccionado={seleccionado}
+          scrollToTop={scrollToTop}
+        />
       )}
-
-      
     </div>
   );
 };

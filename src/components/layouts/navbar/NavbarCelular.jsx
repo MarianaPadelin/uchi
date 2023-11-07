@@ -2,11 +2,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-
+import "./Navbar.css";
 
 function NavbarCelular() {
   return (
-    <Navbar collapseOnSelect expand="lg" >
+    <Navbar collapseOnSelect expand="lg" className="NavbarCelu">
       <Container>
         <Navbar.Brand href="/">
           <img
@@ -23,7 +23,7 @@ function NavbarCelular() {
             <Nav.Link href="/about">Sobre UCHI</Nav.Link>
             <Nav.Link href="/info">Información útil</Nav.Link>
             <Nav.Link href="/contacto">Contacto</Nav.Link>
-            <div className="subRedes" style={{marginTop:"40px"}}>
+            <div className="subRedes" style={{ marginTop: "40px" }}>
               <Link
                 style={{ color: "inherit", marginRight: "10px" }}
                 to="https://www.youtube.com/channel/UCZyzYTcjeYO-M1M48_XiM2Q"

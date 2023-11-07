@@ -39,6 +39,7 @@
     height: 600px;
     margin-bottom: 100px;
     margin-top: 90px;
+    /* margin-top: 0px; */
   }
 
   .carousel-item-next,
@@ -46,11 +47,11 @@
   .carousel-item.active {
     display: flex!important;
     justify-content: center;
-   
+   /* z-index: 0; */
   }
 
   .imagenCarrusel{
-    width: 100%;
+    width: 100;
   }
 
   .texto1 {

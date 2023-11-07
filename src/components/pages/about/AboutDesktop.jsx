@@ -16,11 +16,8 @@ export const AboutDesktop = () => {
             <img
               className="imagenDetalle"
               src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696936334/uchi/about/IMG_5815_jpg_mvavfw.jpg"
-              // {...srcset(item.img, 121, item.rows, item.cols)}
               alt="uchi"
               loading="lazy"
-              // onClick={window.open(seleccionado.img1)}
-              // role="button"
             />
           </ImageListItem>
           <ImageListItem cols={3} rows={2}>
@@ -28,22 +25,17 @@ export const AboutDesktop = () => {
               style={{ marginBottom: "24px" }}
               className="imagenDetalle"
               src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696936336/uchi/about/IMG_1088_jpg_ai8zfh.jpg"
-              // {...srcset(item.img, 121, item.rows, item.cols)}
               alt="uchi"
               loading="lazy"
-              // onClick={`window.open${seleccionado.img1}`}
-              // role="button"
             />
             <ImageListItem cols={3} rows={2}>
               <img
                 style={{ marginTop: "1vh" }}
                 className="imagenDetalle"
                 src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1696936333/uchi/about/IMG_5861_jpg_pazkkw.jpg"
-                // {...srcset(item.img, 121, item.rows, item.cols)}
                 alt="uchi"
                 loading="lazy"
-                // onClick={`window.open${seleccionado.img1}`}
-                // role="button"
+
               />
             </ImageListItem>
           </ImageListItem>

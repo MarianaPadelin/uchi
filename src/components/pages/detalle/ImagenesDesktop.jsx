@@ -1,7 +1,7 @@
 import { ImageList, ImageListItem } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export const ImagenesDesktop = ({ seleccionado }) => {
+export const ImagenesDesktop = ({ seleccionado, scrollToTop }) => {
   //no abre la foto en grande
   return (
     <div className="detalle">
@@ -120,6 +120,7 @@ export const ImagenesDesktop = ({ seleccionado }) => {
         </div>
       )}
       <Link
+        onClick={scrollToTop}
         style={{ marginBottom: "128px", textDecoration: "none" }}
         to={`/productos/${seleccionado.categoria}`}
       >

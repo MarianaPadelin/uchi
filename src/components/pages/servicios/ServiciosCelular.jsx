@@ -33,7 +33,6 @@ export const ServiciosCelular = ({ scrollToTop }) => {
           <ImageListItem className="servicio" key={id}>
             <img
               src={icono}
-              // src={`${icono}?w=164&h=164&fit=crop&auto=format`}
               alt={title}
               loading="lazy"
               style={{

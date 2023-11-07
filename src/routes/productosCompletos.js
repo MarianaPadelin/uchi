@@ -65,7 +65,7 @@ export const productosCompletos = [
     id: "3",
     path: "/productos/suribachi3",
     title: "Suribachi con Furoshiki",
-    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1699143073/uchi/suribachi1/M_Suribachi_-_1_nvccsa.jpg",
+    img1: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1699368245/uchi/Suribachi3/Suribachi-Opacidad_30_l0sicd.jpg",
     img2: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1699143526/uchi/Suribachi3/Suribachi_y_Furoshiki_r8ohrn.jpg",
     img3: "https://res.cloudinary.com/dvxkjikvk/image/upload/v1699143423/uchi/Suribachi3/350x350-Suribachi_y_Furoshiki_4_hzrivf.jpg",
     descripcion:
@@ -251,7 +251,7 @@ export const productosCompletos = [
     li2: "Dejar secar en un lugar limpio y fresco posicionado horizontalmente.",
     li3: "Guardar apoyado sobre su base en un lugar limpio y fresco",
     categoria: "accesorios",
-    enlace: "",
+    enlace: "https://www.uchi.com.ar/chawan/chasen",
   },
   {
     id: "11",

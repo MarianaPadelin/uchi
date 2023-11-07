@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import { NavbarDesktop } from "./NavbarDesktop.jsx";
-
+import "./Navbar.css";
 
 function Navbarcompleto() {
   return (
@@ -19,30 +19,7 @@ function Navbarcompleto() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <NavbarDesktop />
-              {/* <Nav className="me-auto">
-                <NavDropdown title="Productos" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/productos">
-                    Todos los productos
-                  </NavDropdown.Item>
-                  {productos.map(({ id, title, path }) => (
-                    <NavDropdown.Item key={id} href={path}>
-                      {title}
-                    </NavDropdown.Item>
-                  ))}
-                </NavDropdown>
-                <NavDropdown title="Servicios" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/servicios">
-                    Todos los servicios
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="servicios/interiorismo">
-                    Interiorismo
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link href="/about">Sobre UCHI</Nav.Link>
-                <Nav.Link href="/info">Información útil</Nav.Link>
-                
-                <Nav.Link href="/contacto">Contacto</Nav.Link>
-              </Nav> */}
+           
             </Navbar.Collapse>
           </Container>
         </Container>

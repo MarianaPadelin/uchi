@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const ImagenesCelular = ({ seleccionado }) => {
+export const ImagenesCelular = ({ seleccionado, scrollToTop }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <Link
@@ -101,6 +101,7 @@ export const ImagenesCelular = ({ seleccionado }) => {
       )}
 
       <Link
+        onClick={scrollToTop}
         to={`/productos/${seleccionado.categoria}`}
         style={{
           textDecoration: "none",

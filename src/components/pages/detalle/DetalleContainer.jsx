@@ -22,11 +22,14 @@ export const DetalleContainer = () => {
 
      }, [id])
 
+     
+   const scrollToTop = () => {
+     window.scrollTo(0, 0);
+   };
+
   return (
 
-  //  <Detalle seleccionado={ seleccionado } />
-
-    <div> {seleccionado.id ? (<Detalle seleccionado={seleccionado} />) : (<Loader />) }</div>
+    <div> {seleccionado.id ? (<Detalle seleccionado={seleccionado} scrollToTop={scrollToTop}/>) : (<Loader />) }</div>
   )
 }
 

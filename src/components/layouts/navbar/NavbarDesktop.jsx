@@ -1,18 +1,18 @@
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { productos } from "../../../routes/productos.js";
-import "./Navbar.css";
+
 
 export const NavbarDesktop = () => {
   return (
     <div>
       <Nav className="me-auto">
         <NavDropdown title="Productos" id="basic-nav-dropdown">
-          <NavDropdown.Item className="dropdown" href="/productos">
+          <NavDropdown.Item className="dropdown2" href="/productos">
             Todos los productos
           </NavDropdown.Item>
           {productos.map(({ id, title, path }) => (
-            <NavDropdown.Item className="dropdown" key={id} href={path}>
+            <NavDropdown.Item className="dropdown2" key={id} href={path}>
               {title}
             </NavDropdown.Item>
           ))}

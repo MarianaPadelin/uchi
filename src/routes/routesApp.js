@@ -1,7 +1,6 @@
 import { AboutContainer } from "../components/pages/about/AboutContainer";
 import { ContactoContainer } from "../components/pages/contacto/ContactoContainer";
 import { DetalleContainer } from "../components/pages/detalle/DetalleContainer";
-// import { Detalle } from "../components/pages/detalle/Detalle";
 import HomeContainer from "../components/pages/home/HomeContainer";
 import { InfoContainer } from "../components/pages/info/InfoContainer";
 import { ServicioIndividualContainer } from "../components/pages/servicioIndividual/ServicioIndividualContainer";

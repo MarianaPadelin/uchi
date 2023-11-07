@@ -76,7 +76,7 @@ export const Productos = ({ items, scrollToTop }) => {
           </ImageListItem>
         ))}
       </ImageList>
-      <Link className="link" to="/productos">
+      <Link onClick={scrollToTop} className="link" to="/productos">
         Ver todos
       </Link>
       <a href="#top" id="botonArriba">
